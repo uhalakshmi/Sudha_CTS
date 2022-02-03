@@ -1,0 +1,570 @@
+Editor
+========
+VSCode
+
+VisualStudio Code, It is from Mirco Soft.
+
+
+HTML5
+======
+
+HTML stands for Hyper Text Markup Language.
+It is used to develop wep pages.
+
+These web pages will be loaded in browser and executed
+and rendered their contents there it self.
+
+HTML document file extension must be .html 
+
+HTML Document Structure
+========================
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+1)html document must contain only one element, that is <html>
+This element is called as root element.
+html document does not allowe other elements other than <html>
+as root elements or sybbling.
+
+2)this <html> element contains only 2 sub elements / child elements
+    1)<head>
+    2)<body>
+
+3)
+    1)<head>  
+    What is the purpose or role of <head> tag  
+
+    <head> tag contain following elements
+            <title>
+            <link>
+            <style>
+            <script>
+            <meta>
+
+            <title>: it is used to display title of our web application at browser tab.
+
+            <link> : link is used for multiple purposes.
+                1)It is used to make link external css resources with our web page.
+                2)It is used to display favIcon ( it is nothing but logo of application).
+            <style>: This element is used to write internal css. (professionally not recomended)
+
+            <script>
+                This tag is used to write internal java script code.
+
+            <meta>
+                This tag is used to make cocumentation about Author, purpose of application
+                search keywords for this application.
+
+2)<body>
+    This is main tag in <html> tag .
+    What ever we want to display in web page respective efforts must be kept 
+    under <body> tag only.
+
+
+Headings
+=========
+Usually heading of web page is displayed by using following headding tags.
+
+<h1>    very large size heading
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>    very small size heading.
+
+
+paragraph
+===========
+
+<p> is used to display paragraphs
+
+
+images
+========
+<img> is used to display images
+
+
+Anatomy of element
+==================
+
+1)element/tag
+2)element name
+3)openning element
+4)closing element
+5)element content/body
+
+
+some elements may contain only text, those are called as text elements.
+ex: <p>, <h1>
+
+Some elements may not contain closing element.
+
+Some element may not contain content.
+<br></br>
+<hr></hr>
+
+If element content is not available then in that case such elements can 
+self closed.
+Those elements are technically called as self closed elements.
+
+Ex:
+<br/>
+<hr/>
+
+Attributes
+===========
+Attributes provides additional information to element.
+Attributes must be kept in openning element only.
+
+Attribute structure is:
+
+attribute_name="value"
+
+
+Tables
+========
+
+Tables are used to display data in table format.
+Elements associated with Tables
+==============================
+<table>:Entire table is enclosed with table element
+<tr>: table row
+<th>: table column headding
+<td>: table cell definition
+
+Semantic Elements
+==================
+meaning full named elements with respect to web page position
+<header>
+<nav>
+<aside>
+<main>
+<section>
+<article>
+<figure>
+<figcaption>
+<details>
+<summary>
+<footer>
+<time>
+<mark>
+
+<div id="head"><div id="nav"><div id="aside"><div id="footer">
+<span>
+
+Formatting elements
+======================
+<b>= bold
+<i>= italic
+
+<stron>=strong(bold)
+<em>= italic
+
+<small>= narrow font and small font
+<cod>
+<mark> = text is highlighted with color
+
+<sup>= super script.
+<sub> = sub script
+
+
+<del>= line through text
+<ins>= under line;
+
+<pre>
+
+
+Entities and Symbols
+====================
+
+< or >
+
+< = &lt;
+> = &gt;
+
+currencies
+======================
+
+document structure
+heading
+paragraphs
+images
+anatomy of element structure;
+
+attributes;
+
+Tables
+Semantic Elements;
+
+Formatting elements;
+
+Entities and Symbals
+
+
+22-Nov-2021
+=============
+
+1)Live server plugin extension installation.
+
+Lists
+=====
+HTML provides provides 3 types of Lists
+1)ordered Lists(ol)
+2)un ordered Lists(ul)
+3)description lists(dl)
+
+1)ordered Lists(ol)
+===================
+<ol> generates a serial no for each and every list item.
+
+By default that serial nos are : 1, 2, 3 ...
+
+<ol>
+    <li>Ramu</li>
+    <li>Anil</li>
+    <li>Vijay</li>
+</ol>
+
+2)un ordered Lists(ul):
+    <ul> generates bullets for each and every list item.
+
+
+<ul>
+    <li>Ramu</li>
+    <li>Anil</li>
+    <li>Vijay</li>
+</ul>
+
+What is the difference between <ol> and <ul>
+
+1)ol generates serial no for each and ever list item
+2) By default this serial no is 1, 2, 3, etc.
+
+3)there is a possibility we can generate these serial no, 
+in different formats also.
+
+    1)A, B, C, etc
+    2)a, b, c ..... etc
+    3)I, II, II, IV ...etc
+    4)i, ii, iii, iv, v.... etc
+
+4)we can generate these formats by using type="" attribute.
+Ex: type="A"    
+
+<ul>
+=====
+Incase of un ordered list also , we can generate various different styles for list items.
+
+1)disc
+2)circle
+3)square
+4)none
+
+
+
+When to use <ol> and <ul>?
+=========================
+Suppose If our requirement is , list items must be displayed 
+with some serial nos at that time we show go with <ol>
+
+Here serial no , demands order of list items.
+
+ul:
+If list items does not have any priority, at that time
+we should go with un ordered list.
+
+
+Description lists;(dl)
+====================
+<dl>
+    <dt>title<dd>
+    <dd>option 1<dl>
+
+dl = description list
+dt = description title
+dd = description definition    
+
+Links:
+======
+In html link can be displayed or prepared by using 
+
+<a> (anchor) tag;
+
+its structure is:
+
+<a href="some address"> title</a>
+
+If we watn to open another web page or some other section of same web page, 
+at that time we are using <a>
+
+target Attribute
+==================
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+how to refer some other section of section of same web page
+=============================================================
+
+href="#id"
+
+id of which section you want refer.
+
+list and link
+==============
+
+
+unorder list
+=============
+1)list items will be placed with bullets.
+    list-stype-type: none;
+2)list items will be displayed in vertical order.
+    float: left;
+
+
+    li"
+    ===
+    font-size: 22px;
+    font-family: verdhana;
+
+
+<a>
+====
+1)items will be displayed with underscore.
+    text-decoration: none; 
+
+    font-size: 22px;
+    font-family: verdhana;   
+    color: #fff;
+    backgroud-color: dark;
+
+
+23-Nov-2021
+============= 
+
+Clasification of elements 
+=========================
+Elements are classified in 2 types:
+1)block level element;
+2)inline element
+
+1)block level element;
+    1)Block level elements takes entire row space.
+    2)Each block level element takes new row.
+
+    3)by default these elements displayed in top to bottom manner.
+    4)block level element maintains top and bottom margins
+Ex:
+    All heading tags (h1, h6)
+    paragraph, p, pre;
+    div
+    ul
+    section, article, nav, footer, 
+2)inline element
+    1)element occupies space based on their content.
+    2)These elements will be displayed left to rigt and top to bottom.
+    3)These element dont have margin
+
+forms
+=====
+usually forms are used to access data from end user.
+all form element usually enclosed with <form>
+<form>
+    <label>
+    <input>
+    <button>
+    <text-area>
+    <select>
+    <option>
+</form>
+<label>: this tag is used to display labels of html controls:
+
+<input>:this tag works in many varity ways.
+
+Ex1:
+<input type="text" >
+Now this tag displayed as text input box.
+Ex2:
+<input type="password">
+In this case this input box displays as password input box;
+
+Ex3:
+    <input type="button" value="Click Me">
+    Now this input displays a button with title "Click Me"
+
+24-Nov-2021
+=============
+
+various input types
+=====================
+<input type="text">
+password=
+number=
+email=
+radio
+checkbox
+
+
+date
+datetime-local
+time
+week
+month
+
+range
+color
+image
+
+reset, button, submit
+
+Forms Related Attributes
+===========================
+required: make force to enter the value into respective field
+value: we can supply default value using value attribute;
+readonly
+disabled
+placeholder:this is used alternate to label of the filed, if there is no data then only placeholder
+is displayed, suppose if we start type our data in field then placeholder text will be gone.
+multiple (file, email ): which is used to take multiple value;
+
+minlength: this attributes demands min length of text of filed.
+maxlength: this attribute allowes max specified no of characters in respective field
+        It restricts no of characters in respective field
+
+select: this attribute is applied only <option> element to make it select that option as default
+pattern:    is used to specify reg expressions.
+
+pattern="[A-Za-z]{3}"
+autofocus=when ever form is loaded, if you want to keep focus on particular field
+autocomplete: It provides auto suggestion
+
+{3, 10}
+{minlength, maxlength}
+
+1)Password length must be 8 characters length and at most 15 characters
+{8, } = min length= 8, and there is no upper limit
+{, 8}=not mandatory, either 0 characters or at most 8 that field demands
+
+[a-z] : field can accept only a-z any characters
+[A-Z]: field can accept only A-Z any characters
+
++ =  1 or more characters
+* =  0 or more characters
+? =  0 or 1
+
+
+<!DOCTYPE html>
+================
+This element indicated this document is html 5 standard document.
+It should be first line of document.
+
+
+
+lazy loading Demo
+=================
+loading
+==========
+lazy loading is achieved by using loading attribute.
+
+lazy loading is associated with images loading in to web pages.
+
+loading="eager|lazy"
+
+
+
+base
+=====
+1)this tag is used in <head>
+2)this tag is used to specify domain or sub domain names 
+
+Syntax:
+========
+<base href="http://www.abc.com/customers">
+
+3)when we are developping multi mudule application,
+base href provides/guides respective <a> <img src> uris 
+
+ paths (uri)
+
+ <base href="http://www.abc.com/customers">
+ <base href="http://www.abc.com/admin">
+ <base href="http://www.abc.com/users">
+
+
+ formatting tags
+ ==============
+ <b>, <i>(humen being)
+ <strong>, <em>(both, huma being and computer reading)(recommended)
+
+
+Fevicon
+========
+1)it is nothing but logo on tab of browser
+2) it is displayed by using link tag
+3) this link tag must be used in side of <head> after <title>
+4) Usually icon file is kept in same location of index.html
+index.html is main entry file of web application.
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+
+id attribute
+==============
+1)it is global attribte
+2)Each and every element in document must be identified uniquely with id attribute.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

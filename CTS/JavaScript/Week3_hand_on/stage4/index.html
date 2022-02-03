@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: #2196F3;
+            padding: 10px;
+            gap: 30px 60px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .grid-item img{
+            width: 175px;
+        }
+        .grid-item h4{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .grid-item p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+            font-size: 18px;
+            line-height: 10px;
+        }
+    </style>
+    <script>
+        var employees = [
+            {
+                "eid": 101,
+                "employee_name": "Ramu",
+                "email": "ramu@gmail.com",
+                "salary": 25000
+            },
+            {
+                "eid": 102,
+                "employee_name": "Anil",
+                "email": "anil@gmail.com",
+                "salary": 26000
+            },
+            {
+                "eid": 103,
+                "employee_name": "Vijay",
+                "email": "vijay@gmail.com",
+                "salary": 24000
+            },
+            {
+                "eid": 104,
+                "employee_name": "Suresh",
+                "email": "suresh@gmail.com",
+                "salary": 22000
+            },
+            {
+                "eid": 105,
+                "employee_name": "Mahesh",
+                "email": "mahesh@gmail.com",
+                "salary": 40000
+            },
+            {
+                "eid": 106,
+                "employee_name": "Bharath",
+                "email": "bharath@gmail.com",
+                "salary": 32000
+            }
+        ];
+
+        function gridInit(){
+            var grid_container = document.getElementById("grid_container");
+            var grid_items = ``;
+            for(let employee of employees){
+                grid_items += `
+                                    <div class="grid-item">
+                                        <img src="../assets/img/place_holder.jpg" alt="">
+                                        <p>Employee Id: ${employee.eid}</p>
+                                        <p>Employee Name: ${employee.employee_name}</p>
+                                        <p>Employee Salary: ${employee.salary}</p>
+                                    </div>
+                                `
+            }
+            // grid_container.innerText = "Hi"
+            grid_container.innerHTML = grid_items;
+            
+        }
+    </script>
+</head>
+<body onload="gridInit()">
+    <div class="grid-container" id="grid_container">
+    </div>
+</body>
+</html>

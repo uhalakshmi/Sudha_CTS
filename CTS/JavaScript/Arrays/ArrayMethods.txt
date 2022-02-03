@@ -1,0 +1,129 @@
+JavaScript Array Methods
+Method	Description
+concat()	Joins two or more arrays, and returns a copy of the joined arrays
+copyWithin()	Copies array elements within the array, to and from specified positions
+entries()	Returns a key/value pair Array Iteration Object
+every()	Checks if every element in an array pass a test
+fill()	Fill the elements in an array with a static value
+filter()	Creates a new array with every element in an array that pass a test
+find()	Returns the value of the first element in an array that pass a test
+findIndex()	Returns the index of the first element in an array that pass a test
+forEach()	Calls a function for each array element
+from()	Creates an array from an object
+includes()	Check if an array contains the specified element
+indexOf()	Search the array for an element and returns its position
+isArray()	Checks whether an object is an array
+join()	Joins all elements of an array into a string
+keys()	Returns a Array Iteration Object, containing the keys of the original array
+lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+map()	Creates a new array with the result of calling a function for each array element
+pop()	Removes the last element of an array, and returns that element
+push()	Adds new elements to the end of an array, and returns the new length
+reduce()	Reduce the values of an array to a single value (going left-to-right)
+reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+reverse()	Reverses the order of the elements in an array
+shift()	Removes the first element of an array, and returns that element
+slice()	Selects a part of an array, and returns the new array
+some()	Checks if any of the elements in an array pass a test
+sort()	Sorts the elements of an array
+splice()	Adds/Removes elements from an array
+toString()	Converts an array to a string, and returns the result
+unshift()	Adds new elements to the beginning of an array, and returns the new length
+valueOf()	Returns the primitive value of an array
+
+
+
+push()	Adds new elements to the end of an array, and returns the new length
+pop()	Removes the last element of an array, and returns that element
+unshift()	Adds new elements to the beginning of an array, and returns the new length
+shift()	Removes the first element of an array, and returns that element
+
+reverse()	Reverses the order of the elements in an array
+includes()	Check if an array contains the specified element
+isArray()	Checks whether an object is an array
+
+concat()	Joins two or more arrays, and returns a copy of the joined arrays
+entries()	Returns a key/value pair Array Iteration Object
+keys()	Returns a Array Iteration Object, containing the keys of the original array
+
+join()	Joins all elements of an array into a string
+toString()	Converts an array to a string, and returns the result
+
+slice()	Selects a part of an array, and returns the new array
+splice()	Adds/Removes elements from an array
+sort()	Sorts the elements of an array
+
+
+
+concat(): is used to concatenate multiple array elements in to single array .
+
+host array, 
+guest array both elements are participated.
+
+
+entries(): element and its associate index forms as array it is called as entry
+
+each element forms association with corresponding index as array 
+
+
+var fruits = ['Mango', "Banana", 'Apple', 'Orange'];
+
+fruits.entries();
+[[0,'Mango'],[1,'Banana'],[2,'Apple'],[3,'Orange']]
+
+
+slice()	:to extract a portion of array
+this methods takes 2 arguments;
+
+first: it indicates starting index from where we have to strart extracting of elements 
+second: upper bound (upto what index we have to extreact elements,) 
+Node(second is exclusive)
+
+slice(first)
+
+===================
+
+splice(): it performs dual operations 
+1)deleting elements at specified location
+2)add new elements at specified location 
+parameters
+=============
+it takes 2 or 3 parameters 
+
+1)target index location 
+2)how many elements suppose has to be removed 
+3)what elements have to be inserted
+
+
+var ar = [10, 20, 30, 40, 50];
+
+ar.splice(2, 0, 100, 200)
+
+
+
+
+map()
+filter()
+reduce()
+
+
+var ar = [10, 20, 30, 40];
+map(): if we want to perform some operation on each element and 
+    transform that element into some other value and 
+    producess final array with transformed elements.
+
+what is the meaning of above statement.
+Ex: if requirements is add 5 for each element of above given array.
+[15, 25, 35, 45]
+
+filter():
+    it is used to filter or elemenate some of elements of given array.
+    filter needs a callable function. and this callable function will be 
+    executed for each and every element of host array.
+    if current element is not satisfies the condition 
+    then current element is eleminated from result array
+
+reduce(): usually it is used to find totals
+
+
+

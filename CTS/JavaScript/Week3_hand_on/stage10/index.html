@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function listEditHandler(){
+            // alert("Hello Edit ")
+            var listRowEl = document.getElementById("list-row-id");
+            var imgEl = listRowEl.getElementsByTagName("img")[0];
+            // alert(imgEl.src)
+            if(imgEl.src.includes('edit')){
+                imgEl.src = '../assets/img/save.jpg'
+            }else if(imgEl.src.includes('save')){
+                imgEl.src = '../assets/img/edit.png'
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id='list-row-id'>
+        <img src="../assets/img/edit.png" alt="" width="60px" height="60px" onclick="listEditHandler()">
+    </div>
+</body>
+</html>

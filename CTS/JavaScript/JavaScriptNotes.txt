@@ -1,0 +1,2154 @@
+JavaScript
+===========
+Java Script is a scripting language, Usually java script is loaded in browsers,
+and this script is parsed by browser engines, and interpreted and then executed.
+
+
+we have 2 different types of compilization mechanisum.
+1)compiler
+2)interpreter
+
+1)compiler:
+    entire document/file at one shot and convert into binary code(executable code)/machine
+    In case of compiler, if document contains any errors, then all errors will be listed out.
+2)interpreter:
+    it will compile line by line  and executes.
+    If interpreter accross any error in middle of processing document, then there it self 
+    compilazation is stopped.  and error message will be displayed.
+
+JavaScript
+===========
+It is a programming language.  It has capability to develop client side web applications and as well as 
+server side applications also. 
+Now a days Java Script playing key role to develop various web frame works and as well as server side frame works.
+
+Suppose If we conside boot strap:
+    HTML5+CSS3+JavaScript 
+
+C 
+Java, Adv Java, Spring , Spring Boot, Hybernate.
+Oracle Apps(ERP)
+OAF (Oracle Apps Frame Work)(Oracle Java base frame work for Oracle Apps)
+ADF (Application Development Frame Work)
+SAP-ABAP
+Big Data
+Hadoop
+Python Stack
+
+Angular JS (JS)
+================
+JavaScript(20)
+===========
+Angular
+React JS
+View
+TypeScript
+NodeJS
+
+
+
+2)Java Script files must save with extension .js 
+handshtml.html
+
+eno_week2_handson
+    /assets/img
+            /css 
+            /js 
+            /fonts
+    index.html
+
+output statement/ debug statement 
+==================================
+console.log();   
+each console.log( )  takes new line of out put
+The messages which are written using console.log(), 
+those are displayed in browser developper tools console tab.
+
+output statement
+================
+document.write()
+These messages will be displayed in browser
+
+
+how we can write java Script
+============================
+we can write java script in 2 ways
+1)internal java script code 
+2)external java script code 
+
+
+1)internal java script code 
+    1)usually it is part of html documnet.
+    2)It can be written by using <script> element 
+    3)this script element can be kept in any location of html ducument.
+
+
+2)external java script code
+============================
+    we can write java script separate files.
+    that means we can separate business logic from presentation logic.
+
+    business logic = java script 
+    presentation logic = HTML5 
+
+    in that way we simplifize files, it causes improves band with of application.
+    And improves reusability.
+
+
+JavaScript 
+=============
+java script is a type free programming language.
+that means we dont have data types externally to declare variables in java script.
+But java Script internally maintains data types.
+a single variable can hold different data type values at different times
+Ex: 
+    myvarible = "Ramu"; // this time myvariable holds string data 
+    myvariable = 101; // this time myvariable holds integer data
+    myvariable = 5.63; // this time myvariable holds float data or double;
+    myvariable = true; //this time myvariable holds boolean data 
+
+variables 
+===========
+a variable is nothing but name to memory location which can hold some data, 
+and it allowes to change its value accross the program.
+
+
+In java script variables can be declared by using "var" keyword.
+Note: In java scrpt with out declaring variables also we can use variables by directly assigning 
+values
+
+traditional programming language: here every thing is more specific and particular( C Program Language)
+traditional scripting language: ( here every thing is short cut nature.)(Java Script)
+
+
+2)we can declare variables in any location of script.
+
+
+basic data types in java script/primary data types 
+==================================================
+
+number : it holds all numbers, whole numbers, or integers or fractional numbers , float, double.
+string: collection of characters(alphabets, digits, special characters)
+boolean: true or false 
+undefined: undefined
+
+
+number :integers or fractional numbers , float, double.
+=========
+string: usually strings are enclosed with either ' or "
+
+(4 different styles we have)
+
+boolean
+=======
+zeor is treated as false, 
+other than zero any value is treated as true.
+
+undefined: un assigned variable value.
+If we dont assign any value to variable, then undefined value is stored in variable.
+
+
+typeof() operator or function
+=============================
+it is used to get current data type of variable.
+
+
+number : Number
+string: String
+boolean: Boolean
+undefined: undefined
+
+operators
+==========
+operator is a symbol which can perform some operation.
+
+1)assignment operatior
+====================
+=
+It is used to assign some hardcoded value or expression to variable.
+left operand must be variable.
+10=7+3;//illegal 
+a = 7+3;// here a must be variable, then legal
+
+2)arithmetic operators ;
+========================
+Usually arithmetic operators works or takes numbers 
+and performs operation, 
+and producess numbers.
+
++ (addition)                    10 + 2 => 12
+- (subtraction)                 10 - 2 => 8
+* (multiplication)              10 * 2 => 20
+/ (division)                    10 / 2 => 5     (10 / 4 => 2.5) (10 / 3 => 3.3333333333)
+% (modulo operator)             10 % 2 => 0   (10 % 4 => 2) (10 % 3 => 1)
+** (power)                      10 ** 2 => 100
+
+
+3)Increment, decrement operators ;
+=================================
+++ is called as increment operator 
+-- is called as decrement operator 
+
+++
+====
+It increments value of variable by 1 and stores that result in same variable.
+--
+====
+It decreses value of variable by 1 and stores that result in same variable.
+
+
+10++
+Note: increment or decrement operators must applied on variables, but not on constants.
+
+increment operators can play 2 roles based on their roles 
+1)pre increment 
+2)post increment 
+
+1)pre increment :
+    physical :operator is placed left side of variable. (++variable)
+    behaviour: first operation is performed then value is partisipated in expression
+2)post increment :
+    physical :operator is placed right side of variable. (variable ++)
+    behaviour: first value of variable is partisipated in expression then operation is performed  
+
+
+decrement operator   
+==================
+same as above 
+
+
+
+4)relation operators:
+=================================
+relation operators are used to check/compare the relation between numbers.
+
+usually relational operators takes numerics values as operands,
+and performs operation 
+and producess boolean 
+
+>
+<
+>=
+<=
+== ( value equality / value check operator)
+=== ( value and type check / type check operator)
+!=
+
+
+>
+====
+10 > 5  => true
+10 > 15  => false
+10 > 10  => false
+
+
+<
+=====
+10 < 5  => false
+10 < 15  => true
+10 < 10  => false
+
+
+
+>=
+======
+10 >= 5  => true
+10 >= 15  => false
+10 >= 10  => true
+
+<=
+========
+10 <= 5  => false
+10 <= 15  => true
+10 <= 10  => true
+
+== 
+============
+10 ==  5  => false
+10 ==  15  => false
+10 ==  10  => true
+
+
+!=
+========
+10 !=  5  => true
+10 !=  15  => true
+10 !=  10  => false
+
+
+NodeJS(Node for JavaScript)
+===========================
+Installed Location
+====================
+nodejs 
+======
+    1)node.exe 
+    2)npm 
+    3)npx
+
+
+    1)node.exe :By using node we can execute js files 
+
+    2)npm : by using npm a veriety of tasks we can perform. 
+        Ex:1) we can install node libraries 
+        2)We can execute build commands 
+        3)we can do testing by using npm 
+    3)npx : by using it we can install or create react js projects
+
+
+    Global Location:
+    ===============
+C:\Users\<user_name>\AppData\Roaming\npm
+
+
+add.js
+
+node add.js 
+node add 
+
+4)assignment arithmetic operators:
+=================================
+a = a + b ;
+we have short cut 
+a += b;
+a = a - b 
+a -= b;
+
+
++=
+-=
+*=
+/=
+%=
+**=
+
+4)assignment relational operators:
+=================================
+a = a>b
+a >= b;
+
+4)Logical operators:
+=================================
+logical operators takes boolean values as operands,
+and performs operation, 
+and producess boolean value as result. 
+
+
+1)and (&&)
+2)or  (||)
+3)not  (!)
+
+1)and (&&)
+===========
+If both operands are true then only result is true, 
+other wise result if false 
+op1    &&    op2         result
+true   &&    true        true 
+true   &&    false       false 
+false  &&    true        false 
+false  &&    false       false 
+
+
+2)and (||)
+===========
+If at least one operand is true then only result is true, 
+other wise result if false 
+op1    ||    op2         result
+true   ||    true        true 
+true   ||    false       true 
+false  ||    true        true 
+false  ||    false       false 
+
+3)Not (!)
+=========
+it takes only one operand and that to  right operand 
+
+! val/variable 
+===============
+if operand is true then result is false 
+if operand is false then result is true 
+
+!true  => false 
+!false => true 
+
+!0      => true 
+!1      =>  false 
+!10     =>  flase 
+
+!!0     =>  false 
+!!1     =>  true 
+
+Short Circuit behaviour of Logical operators:
+=============================================
+&&:
+if first operand is true then only second operand is evaluated.
+other wise, result is false 
+if first operand is false then no need to evalueate second operand 
+
+
+||:
+if first operand is true then we no need to evalueate second operand 
+and we can confirm result as true.
+
+other wise, second operand should be evalueated.
+
+
+conditional statements 
+=======================
+conditional statements are used to take decission a statement or a set of statements 
+can be executable or not. 
+Syntax:
+==========
+case1)
+if(conditon)
+    statement-1
+
+
+case2)
+if(conditon){
+    statements
+    ----------
+    ----------
+    ----------
+}
+
+if(true)
+    statement-a 
+statement-b
+
+
+if(false)
+    statement-a 
+statement-b
+
+if(true)
+    statement-a 
+    statement-b
+
+
+if(false)
+    statement-a 
+    statement-b 
+
+if(false){
+    statement-a 
+    statement-b    
+}    
+
+
+if-else 
+==========
+case1)
+if(conditon)
+    statement-1
+else 
+    statment-2
+
+
+case2)
+if(conditon){
+    if block statements
+    ----------
+    ----------
+    ----------
+}else {
+    ele block statements
+    ----------
+    ----------
+    ----------
+}
+
+else-if ladder
+==============
+if(conditon1){
+    if block statements
+    ----------
+    ----------
+}else if(conditon2){
+    if block statements
+    ----------
+    ----------
+}else if(conditon3){
+    if block statements
+    ----------
+    ----------
+}else {
+    ele block statements
+    ----------
+    ----------
+}
+nested if 
+===========
+if(condition1){
+    statements
+    ----------
+    if(condition2){
+        some other statements 
+        --------------------
+    }
+    some statements 
+    ---------------
+}
+
+1)hacker rank
+==============
+if given no is perfectly divisible by 3 then print "fizz"
+if given no is perfectly divisible by 5 then print "fuzz"
+if given no is perfectly divisible by 3 and 5 then pring "fizz and fuzz"
+
+
+
+control statements or loops 
+===========================
+control statements are used to execute a statement or a set of statements 
+repetatively until condition becomes false.
+
+while
+for 
+do-while 
+
+while: is used to execute un certain no of iterations
+for: is used to execute certain no of iterations
+
+Syntax:
+while(condition)
+    statemnt 
+
+while(condition){
+    statemnt 
+    ---------
+    ---------
+    -------    
+}
+
+1)print all odd no between 1 to 100
+2)print all even no between 1 to 100
+3)print 5 series nos between 1 to 100
+
+
+break  and continue 
+
+
+break
+======
+break causes exit from loop and control goes execute 
+next available statements 
+
+
+print 1 to 10 natural no, stops when no reaches 6
+
+continue
+========
+continue forcely stops current flow of execution of loop body and 
+control it goes to check condition again.
+
+print only even no between 1 and 10 using continue;
+
+
+for 
+====
+1)for loop 
+2)for of : this is used associate with arrays 
+3)for in : this is used associate with objects
+
+
+1)for loop 
+===========
+for(initialization; condition; modification){
+    statements 
+}
+
+
+do-while
+========
+
+
+what is the difference between while and do-while 
+=================================================
+while:
+1)entrly level condition checking 
+2)in case of first time condtion is failed, then while body 
+    will be executed 0 times;
+
+
+do-while:
+===========
+1)exit leve condition checking 
+2)in case of first time condition is failed, then do-while body 
+    will be executed minimux 1 time.
+
+
+do-while syntax 
+==============
+do {
+    statements 
+    ------------
+}while(conditon);
+
+
+write a program to swap given 2 no.
+
+
+basic data types 
+================
+number
+string 
+boolean
+undefied 
+
+
+data types 
+============
+data types are basically classified in 2 types 
+
+1)primitive data types (basic data types )
+2)secondatory data types ()
+
+
+secondatory data types 
+=======================
+1)arrays 
+2)objects 
+3)classes 
+4)
+
+1)arrays 
+=============
+Array is nothing but name to memory location, 
+where collection elements can stored continuesly.
+
+Ex: var fruits = ['Apple', 'Banana', 'Mango', 'Orange'];
+
+array elements can be accessable by using respective indexes;
+index starts with 0 and end with 1 less than of the size.
+
+Size of array can be accessable by using array property, that is length;
+
+var size = frukts.length;
+
+how to access array elements
+============================
+array elements can be accessable by using respective indexes 
+
+var first = fruits[0];
+var second = fruits[1];
+var third = fruits [2];
+var fourth = fruits[3];
+
+how to modify array elements ;
+============================
+fruits[0] = 'Grapes'
+
+how to add new elements to array; 
+================================
+fruits[4] = 'gua'
+
+
+
+destructuring of array elements
+===============================
+accessing array elements and asign to variables a shortcut notation
+
+var first, second, third, fourth;
+
+[first, second, third, fourth] = fruits;
+
+
+how to iterate array elements using for 
+=======================================
+we can access or iterate array elements in 2 approaches 
+1)for loop 
+2)for of 
+
+
+arrayys methods 
+================
+Note: arrayes are nothing but objects in js
+
+user?.name 
+var namr = user??"hello";
+var namr=user||"hello";
+
+ternary operator 
+================
+true?' ':'  ';
+
+if(condition){
+    //true block 
+}
+else {
+    //else block 
+}
+
+if(condition)
+    //true block 
+else 
+    //else block 
+
+
+
+condition? incase-true: incase-false;
+
+cond1? cond2?incase-true: incase-false : incse-false-cond1
+
+
+
+functions
+==========
+function is nothing a name associated with set of statments.
+
+Syntax:
+
+function fun_name(params){
+    statements
+    ------------
+    ----------
+    [return some_value]
+}
+
+
+advantages of functions: 
+==========================
+1)We can improve modularity of application
+2)we can improve code reusability 
+3)we can reduce max level of code redendance
+4)we can improve unit testing.
+
+function add(a, b){
+    var res;
+    res = a + b;
+    return res;
+}
+
+var no1 = 10;
+var no2 = 20;
+var res;
+res = add(no1, no2);
+
+
+here a, b are called as formal parameters 
+no1, n2 are called as actual parameters 
+
+function declaration/
+
+function expression /ananymus functions /name less function 
+
+ananymus functions doesn't have name;
+function definition is assigned to some variable
+var add = function (a, b){
+    return a + b;
+}
+console.log(add(10, 20))
+
+let and cons 
+
+var: so far we have only var to declare variables 
+
+as per es6 we have 2 more key workds to declare variables 
+
+1)let 
+2)const
+
+1)let :let is used to declare local variable 
+let scope is block scope 
+which ever the block you declared let variables, 
+in that block only let variable is available to access.
+if we try to access out side of block, we will get error.
+current block and sub blocks
+
+
+2)const : same as let incase of scope. + additionally
+
+cons variables act as constants, 
+that means they dont allowe to re assign.
+cons variable will be assigned only one time,
+if we voilate, then it causes error 
+
+
+where we can use const
+=======================
+In array declarations.
+
+var ar = [10, 20, 30];
+const ar = [10, 20, 30];
+
+function expressions 
+var add = function (a, b){
+    return a +b;
+}
+
+const add = function (a, b){
+    return a + b;
+}
+
+
+Math 
+=====
+
+floor, ceil, round, trunc
+
+                        floor,      ceil,       round,      trunc
+                        =========================================
+
+4.1                     4           5           4           4
+4.9                     4           5           5           4
+4.3                     4           5           4           4
+4.6                     4           5           5           4
+
+
+Math.trunc(4.6753, 2) =>4.67
+Math.trunc(4.6753)    =>4
+
+
+spred operator(...)
+====================
+... ussage with array is called as spred operator.
+
+elements of array will be spredded 
+
+var ar = [10, 20, 30];
+console.log(ar);
+console.log(...ar)
+
+string 
+===========
+string is nothing but collection of characters.
+usually string is ended with '\0' in memory
+internally string also maintains indexes same as array.
+var st = 'Hello World';
+
+Note: String is immutable, original string is not modified.
+
+string methods
+===============
+
+arrays
+string 
+functions
+objects 
+
+ascii code 
+============
+A-Z == 65-90
+a-z  => 97-122
+
+
+Date
+=====
+var d = new Date();
+
+
+coersion
+=========
+internal auto type casting.
+
+boolean
+=======
+true= other than 0, and finally it is 1
+false=0
+
+arithmetic operations with boolean
+
+==================================
+
+object literls
+===============
+
+var employee={
+    first_name: 'Anil',
+    last_name: 'Ambani',
+    job: 'Business',
+    email: 'anil.ambani@gmail.com',
+    mobile: 7788995544,
+}
+
+here , these are called as elements, properties.
+enties 
+here property is in the combination of name and value pair.
+
+
+Note:
+======
+here names must be strings 
+value might be any of following ones 
+
+number 
+string
+boolean,
+array 
+other object literal 
+null
+
+
+
+undefined, functions are not allowed 
+
+
+how to access object properties 
+===============================
+object_name.property_name
+
+how to modify object properties 
+================================
+object_name.property_name = new_value;
+
+
+collection of employees 
+=========================
+const employees = 
+[
+    {first_name: '',
+        last_name: '',
+        },
+    {first_name: '',
+        last_name: '',
+        },
+    {first_name: '',
+        last_name: '',
+        },
+    {first_name: '',
+        last_name: '',
+        },
+    {first_name: '',
+        last_name: '',
+        },
+    {first_name: '',
+        last_name: '',
+        },
+
+]
+
+JSON
+========
+JSON: JavaScrip Object Notation ;
+XML
+var employee={
+    "first_name": 'Anil',
+    "last_name": 'Ambani',
+    "job": 'Business',
+    "email": 'anil.ambani@gmail.com',
+    "mobile": 7788995544,
+}
+let, const
+Math, Number, Date, Ascii, String, coersion
+Object literals,
+
+Object literals
+================
+object is nothing but collection of properties,
+where property is combination of name: value pair.
+
+what are the rules we have for Name?
+only string
+what are the rules we have for value?
+number, 
+string,
+boolean,
+array,
+other object, 
+null, 
+
+
+What are not allowed:
+function and undefied 
+
+==============================
+
+how to access properties of object?
+object_name.property?
+value of that property
+
+how to modyfy property of object?
+object_name.property = new_value?
+
+JSON: JavaScript Object Notation.
+===================================
+1)names must be enclosed with ""
+2)string must be enclosed with ""
+
+JSON.
+=====
+.stringfy()
+.parse()
+
+.stringify(): is used to convert object to string.
+.parse(): is used to convert string format object to object
+
+==================================
+functions
+==========
+function add(a, b){
+    return a + b;
+}
+
+function expressions / ananymus function/ name less function 
+============================================================
+const add = function (a , b){
+    return a + b;
+}
+=====================================
+arrow functions 
+===============
+arrow function is almoset same as function expressions, 
+and some how simplied notation.
+
+const add = (a, b) => {
+
+}
+
+1)arrow function is allmost same as function expressions 
+2)function key word is not require 
+3)fatt arrow (=>) is placed in between params paranthasys 
+and body or curly bracess .
+
+
+4)if function body is at most single statement then 
+    { } curly bracess are optional or not required
+5)if function body is at most single statement, 
+in that case we no need to write return key word.
+system it self can take decission to return it.
+
+5)if function parameters are single parameter, 
+then in that case, parnthasys is optional
+
+6)if no parameters or more than one parameter 
+in that case paranthasys is mandatory
+
+
+
+
+
+
+fetch 
+======
+fetch is used to execute REST API , pull data from 
+servers in to js code
+
+
+ajax:
+Asynchronus JavaScript XML
+
+internally at backend of browser that means in js code
+ajax server calls will be executed and fetches data,
+
+and when data is available it produces to us.
+
+
+13-Dec-2021
+===========
+
+Arrays only 
+
+
+string 
+object literals
+functions
+
+
+map
+filter
+reduce 
+
+
+forEach()
+some()
+any()
+==============================
+
+java script document tree structure
+===================================
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <h3></h3>
+            <p></p>
+        <div>
+    </body>
+
+
+Advanced behaviour of arrays
+============================
+1)In js arrays are growable arrays.
+their size is not fixed like other languages c, cpp, java
+you can add any no of element to array at any time.
+
+
+2)js arrays does not support -ve index by default.
+If we use to store values by using -ve indexes , then 
+those -ve indexes will turn as associate index
+
+3)js supports named indexes or associate index
+
+
+4)when array containes either -ve index or named idex,
+then such array is called as associate array.
+
+
+5)named indexes and -ve indexes not supported for array iteration
+by using either index for loop or for of.
+
+6)Solution, In case of associate arrays,
+by using -ve index or named index then only 
+directly we can access values of array
+
+
+
+
+
+
+js
+ts
+reactjs
+nodejs
+mongodb
+
+
+In case HTML , static documentation 
+In case of CSS,  what we are doing is simply we are apply styles 4
+or style properties .
+
+But in case of js, dynamically we are handling html, css 
+by using DOM. 
+
+DOM style object properties
+===========================
+var eleRef = document.getElementById(id);
+eleRef.style.property = new style value 
+
+HTML CSS property VS DOM Style Object Properties
+
+display                     display
+align-content               alignContent
+background-color            backgroundColor
+margin                      margin 
+margin-top                  marginTop
+margin-left                 marginLeft 
+
+tag.style.backgroundColor = '#435423'
+
+HTML attributes Vs DOM Element attributes 
+=========================================
+img 
+====
+src 
+alt
+width
+height 
+
+
+ancher tag(a)
+=============
+href
+
+id
+style
+class
+
+JS Events 
+===========
+Events are associated with HTML Elements as attributes.
+but its associated functions calls are part of JS.
+
+
+We have plenty of events, we used so far onclick, onload
+HTML Event              vs          DOM events
+==================================================
+form 
+    oninput                         input
+    onblur                          blur
+    onfocuse                        focus
+
+keybord
+    onkeydown                       keydown
+    onkeyup                         keyup   
+    onkeypress                      keypress
+mouse 
+    onmouse over                    mouseover
+    onmouse leave                   mouseleave
+    onmouse move                    mousemove
+
+
+JS Event Listener
+====================   
+event source, event, and event functin all are part of js
+
+where as in case of js events 
+event source and event are part of html document.
+only event fuction is part of js 
+
+elementRef.addEventListener("event", callback function)
+
+callback function means function name with out ()
+
+default function arguments,
+===========================
+
+In other languages to invoke function call, we must supply
+required no of parameters.
+
+where as in case of js, without no of required parameters also 
+
+we cane call function.
+
+
+when ever function is called with less no. arguments then
+which out failing function behaviour, we are maintaining default values associated with parameters 
+is called as default parameter.
+
+if value is supplied by function call then that value is participated.
+if value is not supplied then default value is participated.
+
+
+Note: default arguments will be specified right to left. 
+
+but not let to right.
+the meaning of that one is first preference should be given to right most parameters to make
+as default parameters 
+
+function add( a, b=0){
+    //legal
+}
+
+function add( a=0, b=0){
+    //legal
+}
+function add( a=0, b){
+    //error
+}
+
+rest parameters 
+==================
+to give support for variable no of parameter , 
+rest operator is used (...) on right most parameter.
+
+A function can hold only one rest parameter at most.
+
+
+A function does not containe 2 or more rest parameters
+
+rest parameter is prefixed with ...
+
+ default parameter VS rest parameter 
+ =====================================
+ rest parameter must be right most.
+
+
+use strict 
+==========
+1)by default js will allowe to use variables to initialize with out declaration.
+    variable declaration is not mandatory, 
+    first time initialization it self treated as declaration.
+
+2)and if we try to access variables with out declaration then we will get error.
+
+3)if we try to access a declared variable which is not initialized then 
+we will get undefined.
+
+
+"use strict" is not allowes accessing or initializing of not declared variable.
+
+if we tuch not declared variable for the purpose of either initialize or access 
+we will get error.
+variable must be declared befor use it.
+
+"use strict" must be kept top of the page.
+
+===============================================
+Set Objects
+==============
+set object does not allowed duplicate values.
+
+HTML attributes 
+HTML events 
+CSS properties 
+
+JS DOM attributes 
+JS Event 
+JS Event Listeners
+JS style object properties. 
+ex:backgroundColor
+
+
+Object class methods 
+=======================
+these are static methods,
+So we can call directly with class name itself.
+
+now onwards using "name" as variable please avoid.
+
+values()
+keys()
+entries() 
+
+operations on object literals 
+=================================
+1)adding new property 
+2)updating or modify existed property
+3)delete property
+
+freeze();
+freeze() does not allowed above operations on object.
+
+isFrozen(): by default object will return false.
+after apply freeze(), isFrozen() will return true.
+
+
+seal() :
+ rejects delete, adding new property,
+ but modify will be allowed.
+
+ after apply either seal or freeze can we cancel seal or freeze
+ No
+
+ but alternaterly we can achieve
+
+
+ Object Copy 
+ ==============
+ 1)deep copy 
+ 2)Shallow copy 
+
+ 2)Shallow copy 
+ ===========
+ In hallow copy both variables refers same object, 
+ since changes on one object will effects to other object.
+
+ var emp = {
+     fist_name: "Anil",
+     last_name: "Ambani"
+ }
+
+ var emp2 = emp;
+
+
+ 1)deep copy 
+ ===========
+ In deep copy every variable maintains respective object.
+ since changes on one object not reflects to other.
+
+ with the help of JSON.
+
+
+
+18-Dec-2021
+============
+object literal method,
+object literal method short cut,
+reserve words as object literal properties 
+using variable as object literal property
+
+object literal operations 
+1)adding new 
+2)modify/change 
+3)delete 
+
+Object class methods 
+1)values()
+2)keys()
+3)entries()
+4)freeze()
+5)seal()
+6)isFrozen()
+7)isSealed()
+
+oject copy
+1)shallow copy 
+2)deep copy
+
+how to eliminate duplicates from primitive array and object array 
+
+
+
+call(), apply(), bind()
+
+In olden days object literals and their associated 
+functions are integrated as one unit.
+
+This kind of design is improper design, since every objet we are developping 
+same behaviour function. 
+
+to over come this issue, experts given solution in the form call method.
+1)segrigate object literal and function 
+2)assemble function and object which ever we want work currently using "call"
+
+
+
+
+call: call integrates function with some object.
+apply: facilitates variable no of parameters in the form of array .
+bind:
+    In case of call and apply, function will be fired immediatly.
+    where as in case of bind , bind returns a function reference.
+    It allowes us to invoke any time when ever we wish.
+
+
+
+Event Bobbling: 
+==================
+events raising goes from source to out word direction 
+is called as Event Bobbling
+or 
+child element to parent element direction event handlers execution goes 
+
+
+Event Capturing: 
+================
+parent element to child element direction event handlers execution goes.
+
+
+error handling in js
+====================
+when ever error is occured then there it self execution is stopped.
+to over come this kind of situations, we have to used error handling machanisiom.
+
+that is try-catch approach.
+
+syntax: 
+try{
+    proposal code, which may causes exception/errors
+}catch(error){
+    alternate code or error handling code.
+}
+
+
+execution behaviour of try-catch 
+================================
+1)while execution of try block if error occured, then there it self execution of try block 
+is stopped. and execution is moved to corresponding catch block.
+
+In that way we can maintaine life of application.
+
+The advantage is rather than of terminating entire application we are just terminationg 
+that particular block only.
+
+
+2)if no error while execution of try, then entire try block is executed.
+    and no need to execute catch block.
+
+
+proposal code: means the code which may causes errors.
+
+catch block:
+============
+ supplimentary code.
+ 1)we have to suppose display error messages more meaningfully to end users.
+    to realize the situation.
+    in that way suppose the operator should not repeat same mistakes.
+
+2)    
+
+
+
+using finally: 
+finally block is followed by catch block.
+This finally block is executed at any case irrespective of whether error is raised or not.
+
+case1: if error not occured:
+    if error not occured while execution of try block, 
+    thne entire try block is executed. 
+    in that case catch block is not executed.
+    and finally block is executed.
+
+case 2: if error occured: 
+    if error occured while execution of try block, then execution is suspended there it self.
+    and execution is moved to catch block.
+    after completion of  catch block execution then 
+    execution goes to finally block.
+
+
+syntax: 
+    try{
+        actuall code 
+    }    
+    catch(error)   {
+        alter nate code 
+
+    }
+    finallly{
+        this code will be executed at any case.
+    } 
+
+what is main purpose of finally: 
+    to release object memory or close connections. 
+
+moldules: 
+module in js is nothing but js file, which may contain functions, variables, 
+object literals, classes etc.
+
+The advantages of modules is improve the code modularity and 
+improves reusability of code.
+
+so far, we developed code in js file and integrated those js files with html 
+to use them.
+
+but one js file servicess to use in another js file we did not use it yet.
+we can achieve this requirement or behaviour using modules 
+
+By saying exports and imports 
+
+To recognize module files in js, 
+we should keep one package.json file, which contains "type": "module"
+
+what is package.json file 
+=========================
+package.json file playes variaous roles based on situation 
+
+1)Time being it is representing cuffrent foled is module folder. 
+to develop custom modules or libraries we are using.
+
+
+first class functions 
+=====================
+JS has capability to assign functions to variables. and as well as 
+
+functions can be passed as parameters to functions and 
+functions can be returned from some other function .
+
+such kind of behaviours with functions is called as first class functions.
+
+High order fucntions :
+======================
+The functions which has capability taking functions as parameters or 
+which can return some functions , those functions are called as high order functions.
+
+Ex: array methods, like map, filter, reduce etc .
+
+polyfills
+===========
+poly fills is nothing but old browsers wont support some of futures of ES5, ES6 
+To give support for them we are going to develop those fetures in js our selves.
+
+that approach is called as polyfills.
+
+
+prototypal inheritance: 
+It is one of the design patters.
+JS supports prototypal inheritance.
+
+
+Web Storage API 
+=================
+we have bacically 2 types of web storage objects 
+1)localStorage 
+2)sessionStorage 
+
+localStorage supports long time storage
+sessionStorage: until browser closes 
+    once browser closed and reopen session storage will belost 
+
+localStorage: support more size of data (GB)
+
+
+sessionStorageL some limited Data (MB)
+
+
+methods of localStorage to perform operations 
+================================================
+setItem(keyname, value)	
+getItem(keyname)	
+removeItem(keyname)	
+
+key(n)	
+length	
+clear()
+
+
+
+Web storage API
+================
+JS support 2 approaches to give support for web storage.
+1)Local Storage (localStorage)
+2)Session Storage (sessionStorage)
+
+localStorage: 1)there is no expire time 
+2)hege data we can store, like in GB
+sessionStorage: 1)if we close browser, session storage data will be lost .
+2)small data only it supports like MB 
+
+api 
+======
+setItem(keyname, value)	
+getItem(keyname)
+removeItem(keyname)	
+
+key(n)	
+clear()	
+
+length	
+
+Use of Classes,
+
+
+Use of Classes,
+==============
+ES6 supports to create objects based on classes 
+class is nothing but template of object.
+
+class must have one function with name constructor()
+class class_name{
+    constructor(params){
+        we are going to initialise propertis here
+    }
+}
+
+The way of creating object by using class 
+===========================================
+var obj_name = new Class_name(params list);
+
+when ever we call class name after new key word,
+
+it is nothing but the way of creating object.
+1) object is created. 
+2) internally constructor is called with params_list 
+3) properties of instance will be initialized with params list 
+    inside of constructor.
+
+    In that way object initialization is completed 
+
+1)class declaration 
+2)object creation using class
+3)accessing object properties 
+4)modifying object properties 
+5)declaring functions part of classes 
+    (methods in class )  
+6) getters      
+7)mutators (setters )    
+8)private properties 
+    Note: private properties are prefixed with # in js
+    and private properties must be declared
+
+    2)private members are not allowed to access from outside 
+    of class by usign object reference.
+
+9)static members :
+    ============
+    1)for static members memory will be created immediatly when classes are loaded into memory.
+    2)static members are part of class declaration.
+    3)for static members memory is part of class only.
+
+    4)for static members of class, for each and every object creation of class 
+    a separate memory is not created. since memory is static as part of class 
+
+    5)Since, static members will be accessable with class name it self.
+
+    6)No need to create object for the purpose accessing static properties.
+
+
+static members will bedeclared by using key word, static
+
+Note: in case of classes first letter of class must be capital.
+
+
+class Animals{}
+class Persons{}
+
+class employees{}
+
+OOPS overview.
+===================
+js oops support inheritance 
+
+1)inheritance is nothing but extending futures of one class into another class.
+2)In JS, inheritance is achieved by using extends key word.
+3)Child class constructor must use super() invocation as first statement 
+to supply the arguments to parent class constructor.
+
+instanceof:
+============
+instanceof is used to verify wheather an instance is of so and so type class object or not.
+
+if same type of class object, parents class type object , againest Object class 
+we will get true.
+
+in other cases we will get false.
+
+24-Dec-2021
+=============
+class
+constructor 
+methods 
+getters 
+setters 
+private members 
+static members 
+
+inheritancs 
+parent class and child class 
+extends 
+super 
+instanceof 
+
+
+Asynchronus programming in JS
+=============================
+What is asynchronus programming in JS?
+before talking asynchronus programming suppose 
+we have to just talk on synchronus programming.
+
+
+synchronus programming
+======================
+sequential or serial execution of program instructions one after another 
+usually top to bottom of application is called as synchronus programming.
+
+
+Asynchronus programming in JS
+=============================
+The idea of asynchronus programming is the function which may take some long time, 
+for such kind of function invocation, we no need to wait until completing of that particular 
+function. and we will move to execute some other instructions which are waiting in queue.
+
+The advantage of asynchronus programming is improves the performance of application.
+
+we can achieve or develop asynchronus programming in following ways. 
+1)call back functions 
+2)promises 
+3)async/await 
+
+
+1)call back functions 
+=====================
+what is call back function?
+Call back function mechanism, we are passing function as argument to some other function, 
+and that function will take care, when to invoke that argument function.
+
+Developing asynchronus programming using callbacks 
+==================================================
+To meet this requirement JS provides following functions.
+1)setTimeout 
+2)setInterval
+
+
+regarding to this one all available functions in JS 
+=======================================================
+setTimeout()
+clearTimeout()
+
+setInterval()
+clearInterval() 
+
+
+setTimeout():
+setTimeout causes keeping holding of execution of given 
+call back function, upto given delay time.
+once given delay time completed then that job(call back function )
+is joined in queuq to execute. 
+
+Note: setTimeout will call , the give call back function only one time.
+
+setInterval():
+setInterval is same as setTimeout, but callback function will be called repetatively 
+in given interval time.
+
+setTiemout() and setInterval() will provide their idref, 
+So by using their idref we can get control over them.
+
+If any time, we want to cancel them we do it by using their respective 
+clearTimeout() and clearInterval().
+
+Promises 
+===========
+1)Promises is one the mechanism to develop asynchronus programming in JS.
+2)Promises is a class 
+3)promises is promising it must return some value at any cost.
+
+4)syntax of developing promises 
+
+var prom1 = new Promises((resolve, reject)=>{
+
+})
+
+5)promises constructor will take one call back function as argument,
+    and that call back function will take 2 more call back functions as arguments.
+    those are 
+    1)resolve 
+    2)reject.
+
+6)if promises execution is completed successfully, then 
+    resolve is processed 
+7)if promises execution is failed then  reject will be processed 
+
+8)a promises can maintain 3 stages 
+    1)pending
+    2)fullfilled (completed)
+    3)rejected
+9)promises result will be handled by then() and catch() functions 
+    success will be handled by then();
+    fails will be handled by catch();
+
+10)Promise contains some static methods 
+    1)all()
+    2)allSettled()
+
+11) Executing multiple promises 
+    To execute multiple promises, Promise provides following static functions   
+    1)all()
+    2)allSettled() 
+12)  1)all():
+    all() function takes multiple promises in array or iterator form. 
+    Execution of promises is, in same order how they kept in array/iterator.
+    The behaviour of all( ) is, if every promises execution is completed successfully then only
+    all() treats success, other wise if any promise execution is failed, 
+    then there it self execution of other promises is stopped. 
+    and it is treated as promise is failed.
+
+    There is a possibility, result(output) of one promise is used as input to some other promise 
+    This one is technically called as dependancy promises execution .
+
+
+2)allSettled() 
+    allSeattled( ) is used for independant promise execution.
+    The meaning of this one is promisess are independent,
+
+    In this case if one promise execution is failed, then no need to stop.
+    allSeattled() must executes every promises. 
+
+    In case of allSeattled(), wheather all promises executed successfully or some are failed 
+    we will get output from .then() only.
+
+
+
+
+
+27-Dec-2021
+==========
+
+polyfills
+===========
+map(), filte(), reduce(), forEach() 
+var ar = [10, 20, 30, 40]
+ar.map()
+map() proces every element of array and trasforms as per business requirements,
+and finally producess transformed array as result.
+
+task: add 5 on each element of array and finally produce 
+[15, 25, 35, 45]
+
+var mod_ar = ar.map(myfunction);
+function myfunction(ar){
+    return ar + 5;
+}
+
+var mor_ar = ar.map((el)=>{
+    return el + 5
+})
+
+var trs_ar = [];
+1) 10
+
+trs_ar.push(10+5)
+[15]
+
+2) 20
+
+trs_ar.push(20+5)
+
+[15, 25]
+3) 30
+
+trs_ar.push(30+5)
+
+[15, 25, 35]
+4) 40
+
+trs_ar.push(40+5)
+
+[15, 25, 35, 45]
+
+finally, map returns trs_ar;
+
+
+Hoisting
+==========
+When js file loaded into memory, first all declared variables are moved to top of the program.
+and those will be initialized with undefined
+
+In case of declared variables only
+
+Ex: Your Code: 
+case1)
+console.log(a);
+var a = 10;
+console.log(a);
+
+After Hoisting: your code is transformed as below
+================================================
+var a;
+
+console.log(a);
+a = 10;
+console.log(a);
+
+Note: 
+Hoist is applicable for file, and as well as regular function also.
+
+But hoisting is not applicable to function expressions
+
+The hoisting nature applicable for var type variables only.
+The variables wich ever declared by using let and const, temporal dead zone is used.
+
+So let and const variables should not be accessable before declaration.
+voilation causes error
+
+Global execution context and exection context 
+=============================================
+What is Global execution context?
+What is execution context?
+
+The way of executionof js file in browser engine, is 
+happenning by using Global execution context and execution context only.
+When js file is loaded then its journey is starts from Global execution context.
+if any function calls happens, for each and every funcall processing 
+execution context is created.
+
+Global execution context and exection context maintains 2 phases.
+1)memory creation phase for variables 
+2)execution phase 
+
+we can come accross calls stack: 
+call stack maintains order of executions contexts.
+recursive function 
+====================
+
+function which calls it self is called as recursive functin
+
+28-Dec-2021
+==============
+hoisting, use strict, var, let, const, 
+
+lexical scope 
+===============
+availability of variables in current scope or its parent execution context 
+is called as lexical scope.
+This search for availability goes upto topmost execution context that is global execution context.
+If there also not available then we will get error.
+
+variable shadowing 
+==================
+when a variable is redeclared in its sub scopes, is called as variable shadowing.
+
+Map Object 
+==========
+Map object holds key value pairs. 
+here keys must be unique, value might be duplicate.
+here key might be any data type.
+A Map remembers the original insertion order of the keys.
+
+
+self invoking function /immediate execution function /auto execution
+=====================================================================
+a function which can be executed it self with out function calling is called as 
+self invoking function.
+
+he self-executing anonymous function is a special function which is invoked right after it is defined. There is no need to call this function anywhere in the script. This type of function has no name and hence it is called an anonymous function.
+
+()();
+(code goes here)();
+
+(function (parameters) {
+    // Function body
+})(parameters);
+
+
+Regular Expressions
+======================
+
+Regular expressions are search patterns 
+used to match character combinations in strings
+
+Regular expressions we can develop in 2 approaches .
+1)regular expression literal,
+
+ let re = /ab+c/;
+
+2)RegExp object,
+
+  let re = new RegExp('ab+c');
+
+quantifiers
+===========
+symbol          meaning
+=========================
+*               0 or more 
++               1 or more 
+?               0 or 1
+x{n}            x must occur n times 
+x{m, n}         x must occur min time: m times or max: n times
+x{m, }          x must occur min time: m times or more(there is no upper bound)
+
+ex: var re = /ab*c/
+
+success  cases 
+================
+ac
+abc 
+abbc 
+abbbc 
+abbbbc
+case 2: 
+==========
+ex: var re = /ab+c/
+fail cases 
+============
+ac
+
+success  cases 
+================
+abc 
+abbc 
+abbbc 
+abbbbc
+
+case 3: 
+==========
+ex: var re = /ab?c/
+fail cases 
+============
+abbc 
+abbbc 
+abbbbc
+success  cases 
+================
+ac
+abc 
+
+29-Dec-2021
+=============
+1)Lexical Scope 
+2)variable shadowing
+3)Map object 
+4)self invocation function
+5)regular expressions 
+    1)simple pattern 
+    2)quantifiers 
+    3)assertions 
+    4)group & range
+
+30-Dec-2021
+===========  
+Regular Expressions 
+    character classes 
+    groups and range 
+Password validations.
+
+Generators:
+===========
+
+1)Generators are used to walk through lements of the arrays or iterators.
+
+var ar = [10, 20, 30, 40, 50, 60]
+
+for(let i=0; i<ar.length; i++){
+    console.log(ar[i]);
+}
+
+ar.forEach((val)=>{
+    console.log(val)
+})
+
+2)generators looks like normal function, but function key word sufix with '*'
+3)we can get control over iterating array elements in the manner of walk through, 
+    is achieved by using key work, "yield" by the time of implementation.
+4)we get facility to walk through generators by using next()    method
+5)next() method returns next available value .
+
+6)In case of generators, when ever we wish, we can walk, or we can keep hold.
+7)once we reached end of array or iterator, that generator will reach to dead state.
+    then there is no further use with that generator.
+
+Note: in generators, walking back is not possible.
+
+next(), 
+
+
+
+debugging in browser
+==============
+
+generalla we are doing debugging in 2 manners.
+
+1)by using console.log() 
+2)debugging
+
+pure function 
+==============
+pure function is nothing but a design pattern.
+
+a function which behavious always in same manner.
+that means, for given same parameters, 
+it must return same values always.
+
+function behaviour must be consistant, that means for given same parameters,
+respectively out put must be same.
+
+funftion sayHi( p ){
+    return val;
+}
+
+assume , you invoked above function with some parameter like 
+say 10, 
+sayHi(10) 
+this function returns 20;
+
+
+how to develop pure function:
+the function what is using (variables) while processing all must be as part of its 
+parameters. then only fuction must maintains consistancy between given parameters and
+its respective return values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

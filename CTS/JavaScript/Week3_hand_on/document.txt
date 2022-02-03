@@ -1,0 +1,12 @@
+stage1: toggling of grid and list 
+
+state2: load /get external json data into javascript code 
+
+stage3: grid template with hard coded grid items
+
+stage4: local employees data is used to process grid items dynamically 
+        in javascrpt.
+
+
+stage5: clubbed stage 2 + stage4; 
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getData(){
+            const xmlhttp = new XMLHttpRequest();
+            xmlhttp.onload = function() {
+                const userList = xmlhttp.responseText;
+                // console.log(userList);
+                console.log(JSON.parse(userList));
+            }
+            xmlhttp.open("GET", "./employees.json");
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body onload="getData()">
+    <h3>Please looks in console to see Data</h3>
+</body>
+</html>

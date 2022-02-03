@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <style>
+                input{
+                    line-height: 40px;
+                    font-size: 26px;
+                    color: mediumblue;
+                    border: 1px solid red;
+                }
+                input:focus{
+                    border: 1px solid red;
+                    outline: 1px solid red;
+                }
+                input:focus-visible{
+                    border: 1px solid red;
+                }
+            </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend> This is demo on Lagend</legend>
+            <!-- <legend></legend> -->
+            
+            <form action="">
+                <div>
+                    <label for="">Password</label>
+                    <!-- <input type="text" pattern="[A-Z]{5}[0-9]{1}[#$&*]{1}" required> -->
+                </div>
+                <div>
+                    <label for="">Some Number between 100 to 200</label>
+                    <input type="number" min ="100" max="200" step="5">
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+                <div>
+                    <label for="">Image Demo</label>
+                    <input type="image" src="./assets/img/Elephent.jpg" alt="elephent">
+                </div>
+                <div>
+                    
+                        <label for="">Your Favarate Fruits</label>
+                        <input list="fruit-list" type="text">
+                        <datalist id="fruit-list">
+                            <option value="Apple"></option>
+                            <option value="Banana"></option>
+                            <option value="BlackBerry"></option>
+
+                        </datalist>
+                </div>
+                <div>
+                    <label for="">Progress Demo</label>
+                    <progress></progress>
+                    <progress value="75" max="100"></progress>
+                </div>
+                <div>
+                    <label for="">Search Field Demo</label>
+                    <input type="search">
+                </div>
+            </form>
+        </fieldset>
+    </body>
+</html>
+
+
+
+
+

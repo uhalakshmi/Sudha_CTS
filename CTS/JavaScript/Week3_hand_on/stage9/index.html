@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function listEditHandler(){
+            // alert("Hi Edit")
+            var editEl = document.getElementById("list-edit-img");
+            var path = editEl.src;
+            if(path.includes("edit")){
+                editEl.src = "../assets/img/save.jpg"
+            }else{
+                editEl.src = "../assets/img/edit.png"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align:center;">
+        <img src="../assets/img/edit.png" alt="" width="50px" height="50px" onclick="listEditHandler()" id="list-edit-img">
+    </div>
+</body>
+</html>

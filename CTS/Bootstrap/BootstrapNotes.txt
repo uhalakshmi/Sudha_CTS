@@ -1,0 +1,189 @@
+Bootstrap
+===========
+1)bootstrap is a free and open source CSS framework.
+2)it is developed and maintained by twitter
+3)getbootstrap.com
+
+
+Advantages of bootstrap
+========================
+1)fast implementation of web application
+2)responsive web development
+3)mobile first
+
+
+bootstrap is nothing but collection of plenty of CSS built in classes.
+It is nothing but collection of CSS and JavaScript also.
+
+how to do bootstrap set up
+==========================
+1)CDN(Content Delivery Network)
+2)NPM (Node Package Manager)
+
+
+table
+======
+table
+table-stripped
+table-hover
+table-dark
+table-bordered
+
+forms
+======
+form-control
+
+
+buttons
+========
+btn btn-primary
+btn btn-secondary
+
+btn-lg 
+btn-sm
+
+margins
+=========
+
+mt-[0-5]
+mt-0
+mt-1
+mt-2
+mt-3
+mt-4
+mt-5
+
+mr-*
+mb-*
+ml-*
+
+mx-*
+my-*
+
+
+padding
+=========
+pt-*
+pr-*
+pb-*
+pl-*
+px-*
+py-*
+
+
+colors
+======
+text color (fore ground color)
+back ground color
+
+text color (fore ground color)
+==============================
+text-primary
+text-success
+text-light
+text-*
+
+back ground color
+==================
+bg-primary
+bg-success
+bg-light
+bg-*
+
+
+navigation
+===========
+nav
+====
+
+
+columns
+========
+
+100/12
+.col-1{     width: 8.33%    }
+.col-2{     width: 16.66%    }
+.col-3{     width: 25%    }
+.col-4{     width: 32.33%    }
+.col-5{     width: 41.66%    }
+.col-6{     width: 50%    }
+.col-7{     width: 58.33%    }
+.col-8{     width: 65.66%    }
+.col-9{     width: 75%      }
+.col-10{     width: 83.3%    }
+.col-11{     width: 91.66%    }
+.col-12{     width: 100%    }
+
+sm: small device
+md: medium device
+lg: large
+
+col-xs-*
+col-sm-*
+col-md-*
+col-lg-*
+
+
+layout 
+=======
+container 
+    width: 1000px;
+
+fluid-container
+row
+col-md-*
+
+
+RWD(Responsive Web Development)
+================================
+
+0px 480px
+481px 768px
+769px   1279px
+1280
+
+@media (min-width:0px) and (max-width: 480px){
+
+}
+@media (min-width:481px) and (max-width: 768px){
+
+}
+@media (min-width:769px) and (max-width: 1279px){
+
+}
+@media (min-width:1280px) {
+
+}
+
+
+
+@media (min-width:0px) and (max-width: 480px){}
+@media (min-width:481px) and (max-width: 768px){}
+@media (min-width:769px) and (max-width: 1279px){}
+@media (min-width:1280px) {}
+Bootstrap
+=============
+@media (min-width: 576px){}1040 true
+@media (min-width: 768px){}true
+@media (min-width: 992px){}true
+@media (min-width:1280px){}
+
+@media (min-width:0px) and (max-width: 575){}false
+@media (min-width: 576px) and (max-width: 767px){}false
+@media (min-width: 768px) and (max-width: 991px){}false
+@media (min-width: 992px) and (max-width: 1280px){}true
+@media (min-width: 1281px) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

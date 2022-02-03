@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // storing data into sessionStorage
+        sessionStorage.setItem("first_name", "Anil");
+        sessionStorage.setItem("last_name", "Ambani");
+        sessionStorage.setItem("email", "anil.ambani@gmail.com");
+        // getting size of sessionStorage
+        console.log("No.of Items: ", sessionStorage.length);
+
+        // accessing properties
+        console.log("first_name: ", sessionStorage.getItem('first_name'));
+        console.log("last_name: ", sessionStorage.getItem('last_name'));
+        console.log("email: ", sessionStorage.getItem('email'));
+
+        // iterating through localStorage
+        console.log(sessionStorage.key(0));
+        for(let ind=0; ind<sessionStorage.length; ind++){
+            let key = localStorage.key(ind)
+            console.log(key,":", sessionStorage.getItem(key));
+        }
+        // clear or removing all items from sessionStorage
+        // sessionStorage.clear()
+    </script>
+</head>
+<body>
+    <h3>This is demo on sessionStorage, Please look in Developer tools Application Tab</h3>
+</body>
+</html>

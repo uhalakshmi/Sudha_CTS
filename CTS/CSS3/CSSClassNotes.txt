@@ -1,0 +1,257 @@
+CSS 
+CSS stands for Cascading Style Sheet.
+===================================
+
+To apply look and feel for our web pages we using css.
+
+The main advantage of css is 
+1)improve the reusability.
+2)reduce the file size 
+3)improve the band width.
+
+
+How we can develop css classes
+===============================
+
+we can develop classes in following ways.
+1)External css. in that case file extention must be .css
+2)internal css;
+    These css will be written in side of <head> tag, 
+    by using <style>
+3)inline css :
+    if we apply css properties using style attribute of element
+    then those are called as in line css.
+    
+
+1)External css
+================
+If we want to integrate external css we can do in various ways.
+1)By using link tag.
+link tag is used in side of head tag.
+
+2)@import 
+@import is used in some other .css file;
+
+How to configure custom font files:
+====================================
+1)download font font family files.
+2)kept in assets/fonts/font-family in that folder.
+
+@font-face{
+    font-family: custom_font_family_name;
+
+}
+@font-face {
+    font-family: Caliber;
+    /* src: url(sansation_light.woff); */
+    src: url(./assets/fonts/caliber/CaliberOpti.otf);
+}
+
+
+box modelling
+===============
+
+Each and every element maintains box modelling properties.
+
+what are the box modelling properties?
+
+margin
+border
+padding
+content(width , height)
+
+over all element dimention is border+ padding +content.
+
+
+margin: t r b l
+
+margin: 20px;
+margin: 10px 20px 30px 40px; [t, r, b, l]
+margin: 10px 30px;[(t, b) (r,l)]
+margin: 10px 30px 50px;[t, (r,l), b]
+
+border: 15px solid blue; [border-width,  border-style, border-color]
+
+border-width = 15px; [all 4 sides border width = 15ps]
+border-width: 10px 20px 30px 40px; [t r b l];
+border-width: 20px 40px; [(t, b), (r, l)]
+border-width: 20px 50px 30px; [t, (r, l), b]
+
+
+padding: 30px ; [all 4 sides 30px]
+padding: 10px 20px 30px 40px; [t, r, b, l]
+padding: 20px 50px; [(t,b), (r, l)]
+padding: 10px 50px 40px ; [t, (r,l), b];
+
+
+
+
+margin: space
+ margin is nothing but outter space of element (out side of border).
+
+border: border is nothing border;
+
+padding: space
+    padding is nothing but inner space between border and content.
+
+26-Nov-2021
+============    
+margin
+=======
+margin: 20xp;
+margin: 10px 20px 30px 40px;
+margin: 10px 20;
+margin: 10px 20px 30px;
+
+margin-top:
+margin-right:
+margin-bottom:
+margin-left:
+
+padding:
+=======
+padding: 20px ;
+padding: 10px 20px 30px 4px;
+padding: 10px 20px;
+padding: 10px 20px 30px;
+
+padding-top:
+padding-right:
+padding-bottom:
+padding-left:
+
+border: border-width border-style border-color;
+border: 5px solid red;
+
+border-top: 5px solid red;
+border-right: 5px solid red;
+border-left: 5px solid red;
+border-bottom: 5px solid red;
+
+border-width: 10px;
+border-width: 10px 20px 30px 40px;
+border-width: 10px 20px;
+border-width: 10px 20px 30px;
+
+border-top-width: 20px;
+border-right-width: 20px;
+border-bottom-width: 20px;
+border-left-width: 20px
+
+border-style: solid; 
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid
+
+border-color: rgb(90, 34, 56); #f345a3;
+border-top-color: #f345a3;;
+border-right-color: #f345a3;;
+border-bottom-color: #f345a3;;
+border-left-color: #f345a3;
+
+
+
+
+
+
+
+margin-top:
+margin-right:
+margin-bottom:
+margin-left:
+
+
+font
+=====
+font-size: 24pt;
+font-family: Verdana;
+font-waight: bold, 500, 600, 700;
+font-size: 58pt;
+font-family: Calibri;
+font-weight: 200;
+
+boxmodelling
+display
+position
+
+display
+========
+    block
+    inline-block
+    flex
+    grid
+    none: causes element will be removed from DOM document
+
+visibility: this property controls hiding or displaying or elements
+
+
+float:is used direction and position of elements(left, rght)
+    float:left;
+        element will flow left to right;
+    float: right;
+        element will be flow right to left;
+clear: is used to stop the float nature;
+
+flex
+grid
+
+CSS Selectors:
+==============
+What is the selector?
+===================
+The way of writing or defining css classes and making link with element 
+is called as selector
+
+1)Simple Selectors
+    1)element name based selectors
+    2)class based selectors
+    3)id selector;
+
+1)element name based selectors
+==============================
+1)takes element name it self to define classes  
+2)In this case in entire document, where ever thse html elements are there ,
+for those elements these select styles will be applied directly.
+3)you no need to link with elements manually
+
+
+body{
+
+}
+ul{
+
+} 
+li{
+
+}
+
+2)class based selectors
+========================
+1)for clas based select, you can choose any name, usually business contex related names.
+2)select must start (.)
+3)how to link with elements
+    Thse class based selectors will linked with elements using "class" attribute of element.
+
+ 3)id selector
+ =============
+ 1)thse selector will be defined by using id names of elements.
+ 2)these selelctors must start with (#)
+ 3)How to apply to elements?
+    Not need to apply or make link with elements manually.
+    It is directly applied, if element holds id
+    <style>
+        #id1{
+                
+        }
+    </style>
+    <div id="id1">
+
+    </div>
+
+CSS Specificity/ CSS Selector Specificity
+=========================================
+
+Specity tells highest priority of selectors.
+
+

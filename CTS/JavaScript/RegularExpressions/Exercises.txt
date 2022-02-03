@@ -1,0 +1,16 @@
+1)Find All Words	
+2)Find All 2 characters length Words only
+3)Find all 3 character length words only
+4)Find all 4 characters length words only
+5)Find all 5 characters length words only
+6)Find all Title case words only
+7)Find all Upper case words only
+8)Find all Lower case words only
+9)Find all numbers
+10)Find all 2 digits numbers only
+11)Find all 3 digits numbers only
+12)Find all 4 digits numbers only
+13)Find all 5 digits numbers only
+14)Find all 2-5 characters length words only
+15)Find all words what start with 'a' or 'A'
+16)Find all words what starts or ends with vovels(aeiou)

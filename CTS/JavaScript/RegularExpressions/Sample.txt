@@ -1,0 +1,20 @@
+
+
+
+A regular expression is a special sequence of characters that helps you match or find other
+strings or sets of strings, using a specialized syntax held in a pattern.
+Regular expressions are widely used in UNIX world.
+
+The module re provides full support for Perl-like regular expressions in Python. 
+The re module raises the exception re.error if an error occurs while compiling or using a regular expression.
+
+We would cover two important functions, which would be used to handle regular expressions.
+Nevertheless, a small thing first: There are various characters, which would have special meaning when
+they are used in regular expression. To Avoid any confusion while dealing with regular
+ expressions, we would use Raw Strings as r'expression'. 5 3 2 34 55 88 659 9875 25 3 6 45 852
+ 45632 45128 7854695 85698547 5236 5 2 45 12 365
+
+ \b[aeiouAEIOU]\w+\b
+ \b\w+[aeiou]\b
+ (\b[aeiouAEIOU]\w+\b)|(\b\w+[aeiou]\b)
+ \b[aeiouAEIOU]\w+[aeiou]\b

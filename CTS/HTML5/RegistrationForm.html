@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Registration Form</h3>
+        <form action="" autocomplete="off">
+            <div>
+                <label for="">First Name:</label>
+                <input type="text" name="first_name" value="some value" readonly=><label for="">This is readonly filed</label>
+            </div>
+            <div>
+                <label for="">Last Name:</label>
+                <input type="text" name="last_name" disabled><label for="">This is disabled field</label>
+            </div>
+            
+            <div>
+                <label for="">Upload Your Latest Image:</label>
+                <input type="file" name="my_img" multiple>
+            </div>
+            <div>
+                <label for="">Password:</label>
+                <input type="password" name="password" minlength="8" maxlength="15">
+            </div>
+            <div>
+                <label for="">Confirm Password:</label>
+                <input type="password" name="cpwd">
+            </div>
+            <div>
+                <label for="">Date Of Joining</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="">Date and Time Of Joining</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <label for="">Month  Of Joining</label>
+                <input type="month">
+            </div>
+            <div>
+                <label for="">Week  Of Joining</label>
+                <input type="week">
+            </div>
+            <div>
+                <label for="">Time  Of Joining</label>
+                <input type="time">
+            </div>
+            <div>
+                <label for="">Yout Favrate Color</label>
+                <input type="color">
+            </div>
+            <div>
+                <label for="">Some Range</label>
+                <input type="range" value="15" max="200">
+            </div>
+            <div>
+                <label for="">Email:</label>
+                <input type="email" name="email" size="50" maxlength="10" autofocus>
+            </div>
+            <div>
+                <label for="">Mobile:</label>
+                <input type="number" name="mobile" maxlength="10" minlength="10" placeholder="Mobile"> 
+            </div>
+            <div>
+                <h3 style="display: inline-block;">Gender: </h3>
+                <input type="radio" name="gender" >Male 
+                <input type="radio" name="gender" >Female
+                <input type="radio" name="gender" >Not Interested
+            </div>
+            <div>
+                <label>Habbits</label>
+                <input type="checkbox" name="habbits">Playing Cricket
+                <input type="checkbox" name="habbits">Watching Movies
+                <input type="checkbox" name="habbits">Reading Books
+                <input type="checkbox" name="habbits">Listening Musics
+            </div>
+
+            <div>
+                <label for="">Education</label>
+                <select name="education" id="" >
+                    <option value="MCA">MCA</option>
+                    <option value="MTech">MTech</option>
+                    <option value="BTech" selected>BTech</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Tell about your self:</label>
+                <textarea name="about_urself" id="" cols="150" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="reset">Clear</button>
+                <button> Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
+
+<!-- http://127.0.0.1:5501/Cohort-67/MEAN/HTML5/RegistrationForm.html?
+    first_name=Akhil&
+    last_name=Akkineni&
+    password=mypassword&
+    cpwd=mypassword&
+    email=akhil.akkineni%40gmail.com&
+    mobile=998877998866&
+    gender=on&
+    habbits=on&
+    habbits=on&
+    education=BTech 
+-->

@@ -1,0 +1,192 @@
+1)TypeScript is just super set of JS.
+    That means, entire JS as it is, We can use inside of 
+    TS Programming.
+2)TS is developed by MicroSoft.
+3)Its first version is released in 2012
+4)Its latest version is 4.5.4
+5)Its official web site is:  typescriptlang.org
+6)Typescript file extension is: .ts or .tsx 
+
+Typescript uses static type checking of variables.
+The advantage of TS is to avoid runtime type issues.
+
+MEAN 
+Mongo, ExpressJS, Angular, NodeJS
+MERN
+Mongo, ExpressJS, ReactJS, NodeJS
+
+If we consider Angular, entire Angular is developed 
+by using TS only.
+
+Setup of TypeScript. 
+====================
+To setup Typescript, we need NPM.
+NPM comes along with NodeJS installation.
+
+npm install -g typescript 
+
+Note: here -g stands for "global location of npm"
+
+After completion of installation, 
+Please check in global location.
+
+And check its version 
+version checking
+================
+tsc --version
+short cut Notation:
+tsc -v 
+
+First Example: 
+console.log("Hello World")
+Execution: 
+We cant directly execute, .ts files.
+By using ts compiler we can compile .ts files. 
+tsc (typescrpt compiler ) on success of .ts file compilation,
+.js file is produced.
+
+>tsc ex1.ts 
+It produces ex1.js 
+
+
+Note: 
+For each and every small modification of TS files, we should re generate js files.
+other wise, old js files wont reflects new ts code changes.
+
+tsc ex1.ts 
+
+
+we have a ficility to identify each and every small modification of ts files and automatically 
+regenerate .js files 
+
+tsc -w ex1.ts 
+
+Here -w stands for "Watch Mode"
+
+
+basic data types 
+=================
+number 
+string 
+boolean 
+
+Syntax: 
+var <van_name>:<data_type>[=value]
+
+any:
+========
+any type will allow any type of data to assign into variables.
+
+type unione: (|)
+=================
+ex: var some_code: number|string;
+
+arrays: 
+=========
+syntax: 
+var <var_name>:<data_type[]>
+
+tuples: 
+========
+tuples are basically array with different data types values 
+
+functions: 
+
+interface: 
+    interface is nothing but user defined data type.
+    it is declared by using keyword "interface"
+optional fields
+===============
+optional fields or properties are suffixed with (?)    
+
+classes 
+==========
+class is nothing but template of object.
+usually class contains constructor () method
+Class is collection of properties and its associated methods.
+
+Note: in classes default access scope is public 
+and public keyword is optional
+
+public members can be accessable by using its object reference.
+private members can not be accessable out side of class.
+private members can be accessable only with in the class.
+
+access specifiers 
+=================
+Type script privides following access specifiers 
+1)public 
+2)private 
+3)protected 
+
+1)public 
+=========
+public members can accessable any ware, and 
+can be derieved into child classes in inheritance.
+2)private 
+=========
+private members can be accessable only with in class.
+private members can not be derieved into child class.
+3)protected 
+===========
+protected members can be derieved into child class and accessable from child class.
+protected members can not accessable out side of class by using reference.
+
+OOPS 
+=====
+1)Encapsulation
+2)Inheritance 
+
+1)Encapsulation
+Encapsulation is nothing but a mechanisim of combining the properties and its associated 
+behaviours(methods/functions) and keeping as a single entity.
+Example : class 
+The way of implementing class is nothing but encapsulation.
+
+private members:
+===================
+Usually properties will be declared with private access specifiers.
+and their access methods will be declared by using public access specifiers. 
+
+In that way we can achieve data protection.
+
+Inheritance: 
+============
+Inheritance is nothing but extending features of one class into another class.
+or
+Derieving features of one class into another class.
+
+inheritance we are achieving in type script by using 'exetends' key word
+
+types of inheritance: 
+=====================
+1)simple inheritance 
+2)multi level inheritance 
+3)multiple inheritance. 
+4)heirarchial inheritance 
+5)hybrid inheritance 
+
+Note: type script supports first 2 inheritancess only.
+
+static members: 
+===============
+static members are part of class, for each and every object creation 
+memory is not allocated or created for static members.
+memory for static members will be created when class is loaded into memory, 
+as part of class memory only.
+
+since, static members will be accessable with help of class name itself.
+To accessess the static members we no need to create instance of class.
+
+
+Enums: 
+======
+Enum is used to declare collection of named constants.
+usually enum constants values starts with 0 and keep goes.
+If we want our own desired srries, we can initialize with that.
+
+Generics:
+===========
+Generics are used to improve code usability with more particular data type.
+
+<T>

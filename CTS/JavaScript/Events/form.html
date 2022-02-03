@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function focusHandler(){
+            // alert("First Name gained focus")
+            console.log("First Name gained focus");
+        }
+        function focusLostHandler(){
+            console.log("First Name Loosing focus");
+        }
+        function inputChangeHandler(){
+            console.log(event.target.value);
+            var firstNameRef = event.target;
+            // console.log(firstNameRef);
+            firstNameRef.value = firstNameRef.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <div>
+                <label for="">First Name:</label>
+                <input type="text" onfocus="focusHandler()" onblur="focusLostHandler()" oninput="inputChangeHandler()">
+            </div>
+            <div>
+                <label for="">Last Name:</label>
+                <input type="text">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
