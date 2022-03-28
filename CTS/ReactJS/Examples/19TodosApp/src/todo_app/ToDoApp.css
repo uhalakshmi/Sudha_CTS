@@ -1,0 +1,14 @@
+
+
+.del-icon{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.del-icon:hover{
+    cursor: pointer;
+    border: 1px solid #e1e1e1;;
+    border-radius: 50%;
+    background-color: cadetblue;
+    display: inline;
+}

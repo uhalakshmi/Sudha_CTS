@@ -1,0 +1,14 @@
+.delete-icon{
+    display: inline;
+    color: red;
+    width: 33px;
+    margin: 10px;
+}
+.delete-icon:hover{
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 1px 12px;
+    background-color: #eee;
+}
