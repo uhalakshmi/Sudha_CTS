@@ -1,0 +1,346 @@
+MongoDB 
+========
+1)Mongo DB is NO-SQL Based data base .
+
+In case of SQL based data bases, data is stored in the form tables. 
+and its contents are called rows. 
+That means table is nothing but collection of rows.
+where as row is nothing but collection fields.
+
+In case of NO-SQL based data bases, tables concept is not available. 
+data is stored in the form of collections.
+So what we can understand is table in sql === collection in no-sql.
+
+sql based data bases                                    no-sql based data bases
+====================                                    =========================
+db2 (IBM)                                               MongoDB
+oracle (ORACLE)                                         Cassandra
+mysql (MYSQL=>SUN Microsystems=>Oracle)                 CouchDB
+sql server (MicroSoft)                                  HBase
+Postgre SQL (Postgres)
+
+Anatamy of Mongos or no-sql 
+===============================
+user 
+database 
+collection 
+document 
+
+user : nothing but regular dialogue, who has authority to access the database.
+    he must has credentials to access the database 
+database: is nothing a space where all collectons will be stored. 
+collection: collection is nothing but it is a table, which contains collecton of documents.
+document: document is nothing but tuple, or row, which contains data in the form 
+    json object. like key/name and value pairs.
+
+MongoDB is available in various flaours like 
+1)local server (1.enter prise version, 2)community version)
+2)cloud (atlas)    
+
+Time being we working with community version server, so it available locally if we installed.
+
+Its path like 
+c:/MongoDB/server/4.4.2/bin 
+    here bin folder contains all executive files .
+    1)mongod (It is server file)
+    2)mongo ( It is client shell)
+
+    mongod is a server file, suppose we should run first.
+    to start mongod server, first go to its location, and open one cmd there,
+    and there we can start directly mongod.
+    In some versions it is keep on running, and in some versions it will be terminated and 
+    executiong background as service. 
+
+
+    mongo: It is a client shell environment, which allowes to perform db operations 
+        like creating collections, creating documents, updating documents, deleting documents.
+        To start this mongo client shell, go and open one more cmd,
+        and directly execute mongo, 
+        on success of mongo starts, we will get prompt, to start execution of commands.
+
+1)display all databases, 
+    show dbs
+    or 
+    show databases;
+
+2)how to select particular data base. 
+    By using use command 
+    Syntax: use <db_name>
+    use admin
+3)how to switch one db to another db 
+    same as above, by using use command 
+    use <another_db>
+4)How to create new db. 
+    To create new db, we dont have any particular command.
+    To create new db also, same command 
+    like 
+    use <new_db_name> 
+    above command is used to create new db.
+
+    when ever we created or connected to new db, if we ask for show list of dbs, 
+    at that time, newly created db is not listed.
+    To make it list, we should keep some collections, like at least one collection.
+    Then only newly created db will be listed.
+5)  how to remove or drop the db 
+    1)we should connecto to particular db
+    2)db.dropDatabase();
+    This command will drop current db.
+6)display all collection 
+    show collections;
+7)how to display a particular collection contents     
+    display all documents of collection
+
+    db.emp.find();
+
+    The actual syntax of find() is 
+    find(query, projection)
+    query: criteria or where conditions 
+    projection: meass selective fields 
+    Note: in projection selective fields will be controlled in following manner
+    {field: 1 or true } for selecting the field.
+    {field: 0 or false } for unselectig the field. 
+
+8)How to create new collection.
+    db.createCollection("collection_name")
+     
+9)how to drop the collection 
+    db.collection_name.drop();   
+    Ex: 
+    db.emps.drop(); 
+
+10)create new collection name as "emps"
+    db.createCollection("emps")
+11)inserting data into newly created collection 
+    inserting new document into collection.    
+
+    db.emps.insert({empno: 101, ename: "murali", email: "murali@gmail.com"});
+12)inserting single document 
+    db.emps.insertOne({empno: 102, ename: "Anil", email: "anil@gmail.com"});
+13)inserting multiple documents; 
+    db.emps.insertMany([{},{}, {}]);
+
+    db.emps.insertMany([{empno: 103, ename: "Suresh", email: "suresh@gmail.com"},
+        {empno: 104, ename: "Amala", email: "amala@gmail.com"},
+        {empno: 105, ename: "Nagma", email: "nagma@gmail.com"}]);
+
+data types 
+==========
+int 
+long
+double 
+strig
+bool
+date
+timestamp
+array
+null
+undefined
+
+object
+binData
+
+
+{EMPNO: 7369, ENAME: "SMITH", JOB: "CLERK", MGR: 7902, HIREDATE: "17-DEC-80", SAL: 800, COMM: null, DEPTNO: 20},
+{EMPNO: 7499, ENAME: "ALLEN", JOB: "SALESMAN", MGR: 7698, HIREDATE: "20-FEB-81", SAL: 1600, COMM: 300, DEPTNO: 30},
+{EMPNO: 7521, ENAME: "WARD", JOB: "SALESMAN", MGR: 7698, HIREDATE: "22-FEB-81", SAL: 1250, COMM: 500 , DEPTNO: 30},
+{EMPNO: 7566, ENAME: "JONES", JOB: "MANAGER", MGR: 7839, HIREDATE: "02-APR-81", SAL: 2975, COMM: null, DEPTNO: 20},
+{EMPNO: 7654, ENAME: "MARTIN", JOB: "SALESMAN", MGR: 7698, HIREDATE: "28-SEP-81", SAL: 1250, COMM: 1400, DEPTNO: 30}
+
+{EMPNO: 7698, ENAME: "BLAKE", JOB: "MANAGER", MGR: 7839, HIREDATE: "01-MAY-81", SAL: 2850, COMM: null, DEPTNO: 30}
+{EMPNO: 7782, ENAME: "CLARK", JOB: "MANAGER", MGR: 7839, HIREDATE: "09-JUN-81", SAL: 2450, COMM: null, DEPTNO: 10}
+{EMPNO: 7788, ENAME: "SCOTT", JOB: "ANALYST", MGR: 7566, HIREDATE: "19-APR-87", SAL: 3000, COMM: null, DEPTNO: 20}
+{EMPNO: 7839, ENAME: "KING", JOB: "PRESIDENT", MGR: null, HIREDATE: "17-NOV-81", SAL: 5000, COMM: null, DEPTNO: 10}
+{EMPNO: 7844, ENAME: "TURNER", JOB: "SALESMAN", MGR: 7698, HIREDATE: "08-SEP-81", SAL: 1500, COMM: 0, DEPTNO: 30}
+
+{EMPNO: 7876, ENAME: "ADAMS", JOB: "CLERK", MGR: 7788, HIREDATE: "23-MAY-87", SAL: 1100, COMM: null, DEPTNO: 20}
+{7900: 7369, ENAME: "JAMES", JOB: "CLERK", MGR: 7698, HIREDATE: "03-DEC-81", SAL: 950, COMM: null, DEPTNO: 30}
+{EMPNO: 7902, ENAME: "FORD", JOB: "ANALYST", MGR: 7566, HIREDATE: "03-DEC-81", SAL: 3000, COMM: null, DEPTNO: 20}
+{EMPNO: 7934, ENAME: "MILLER", JOB: "CLERK", MGR: 7782, HIREDATE: "23-JAN-82", SAL: 1300, COMM: null, DEPTNO: 10}
+ 
+ 
+{EMPNO: 7499, ENAME: "ALLEN", JOB: "SALESMAN", MGR: 7698, HIREDATE: "20-FEB-81", SAL: 1600, COMM: 300, DEPTNO: 30},{EMPNO: 7521, ENAME: "WARD", JOB: "SALESMAN", MGR: 7698, HIREDATE: "22-FEB-81", SAL: 1250, COMM: 500 , DEPTNO: 30},{EMPNO: 7566, ENAME: "JONES", JOB: "MANAGER", MGR: 7839, HIREDATE: "02-APR-81", SAL: 2975, COMM: null, DEPTNO: 20}
+
+14)display first document; 
+    db.emps.findOne();
+
+15)display records in sorted order based on names 
+    db.emps.find().sort({field_name: 1})
+    1 stands for ascending order 
+    -1 stands for descending order
+16) projection 
+    projection is used for selecting or un selectiong the fields or properties 
+
+    db.emps.find({},{field_name: 1, field_name:0})    
+    In case of projection 
+    1 stands for selecting the field 
+    0 stands for unselecting the field 
+
+17)Dont display _id 
+    db.emps.find({}, {"_id": 0})
+18)dont display hiredate, comm, along with id 
+    db.emps.find({}, {"_id": 0, HIREDATE: 0, COMM: 0})    
+19)display only following fields 
+    empno, ename, job, sal   
+
+    db.emps.find({}, {EMPNO: 1, ENAME: 1, JOB:1, SAL: 1});
+    db.emps.find({}, {EMPNO: 1, ENAME: 1, JOB:1, SAL: 1, _id: 0});
+
+
+relational operators 
+===========================
+$gt 
+$gte 
+$eq 
+$ne
+$lt 
+$lte
+$in
+$nin 
+
+logical operators 
+==============  
+$and 
+$or 
+
+20)display all documents whose salary is more than of 1500
+    db.emps.find({SAL: {$gt: 1500}}, {_id: 0})
+21)display all employees who are working as salesman  
+    db.emps.find({JOB: "SALESMAN"}, {_id: 0});
+    OR 
+    db.emps.find({JOB: {$eq: "SALESMAN"}}, {_id: 0});
+
+22)display who are working for 20 deptno
+    db.emps.find({deptno: 20})
+23)display all employees who are working for departments 20 or 30
+    db.emps.find({deptno: 20}, $or {deptno:30})
+
+    $in( in case of single field and multiple values )
+    ===
+    db.emps.find({deptno: {$in: [20, 30]}})
+
+24)display total no of records/documents in particular collection 
+    db.emps.count();
+    14
+
+    10      3
+    20      5
+    30      6
+=================
+            14
+25)display all employees who are working as clerk or salesman  
+    db.emps.find({job: {$in: ['CLERK', 'SALESMAN']}}).sort({job: 1}) 
+26)display all employess who are not working neither  as clerk nor salesman   
+    db.emps.find({job: {$nin: ['CLERK', 'SALESMAN']}}).sort({job: 1}) 
+27)display all employees who are not working neither for deptno 10 nor 30;
+    db.emps.find({deptno: {$nin: [20, 30]}}).sort({deptno: 1});
+
+    Note: if conditon is taking only on single field with multiple values then 
+    $in is helpful 
+    2)if condition is taking with multiple fileds then $or is helpfull
+28)display all employeess who are working as either clerk or for deptno 20;
+    db.emps.find({$or: [{job: 'CLERK'}, {deptno: 20}]}).sort({deptno: 1});
+
+28)display all employeess who are working as  clerk and for deptno 20;  
+    db.emps.find({$and: [{job: 'CLERK'}, {deptno: 20}]});
+
+    db.emps.find({job: 'CLERK', deptno: 20});
+
+29)display all employees who does not have reporting manager. 
+    db.emps.find({mgr: null})
+
+    Limiting
+    ========
+    Limiting is used to fetch top n records.
+    we can achive this one by using function limit(n);
+30)display top 3 salaries employees details  
+    db.emps.find().sort({sal: -1}).limit(3)
+
+    db.emps.distinct("sal").sort((a, b)=>b-a).slice(0, 3);
+
+    db.emps.find({sal: {$in: db.emps.distinct("sal").sort((a, b)=>b-a).slice(0, 3)}})
+
+30)display least 3 salaries employees details  
+    db.emps.find().sort({sal: 1}).limit(3)   
+
+Note: 
+    In mongodb, for every collection, _id acting as primary key.
+    primary key means 
+    1)field is mandatory 
+    2)field must contain unique value
+
+Deleting documents from collection 
+===================================
+delete 
+deleteOne({})
+deleteMany({})
+
+db.emps.deleteOne({ename: "anil"})
+
+creating unique index on empno field 
+======================================
+db.emps.createIndex({empno:1}, {unique: true}});
+Note: Usually index should be created on empty collection.
+
+before creating unique index on empno field, if we try to insert duplicate values ,
+then it will be accepted. 
+
+After creating unique index, if we try to insert duplicate values in that field,
+those documents will be rejected.
+
+
+Aggregation,
+============
+Aggregation, is used to form data or documents into various groups. based on certain field. 
+
+aggrigation function is 
+aggrigate();
+db.collection_name.aggrigate(); 
+aggrigate operators 
+=====================
+$min 
+$max 
+$sum 
+$count 
+$avg 
+$stdDev 
+
+31)how many documents are there in emps collection.  
+    db.emps.count()
+31)how many documents are there in emps collection based on each department.      
+    10          3
+    20          5
+    30          6
+                ===
+                14
+    db.emps.aggregate({$group: {_id: "$deptno", count: {$sum: 1}}});                
+    db.emps.aggregate({$group: {_id: "$deptno", count: {$count: "$empno"}}}); (in case of 5 version)
+32)display top salary of each department 
+    db.emps.aggregate({$group: {_id: "$deptno", topSalary: {$max: "$sal"} }});
+
+33)display leases salry of each department 
+    db.emps.aggregate({$group: {_id: "$deptno", leastSalary: {$min: "$sal}}});
+34)display total cost/expenditure of each department based on salaries  
+    db.emps.aggregate({$group: {_id: "$deptno", totalSalaries: {$sum: "$sal"}}})
+
+    db.emps.aggregate({$group: {_id: "$deptno", count: {$sum: 1}, totalSalaries: {$sum: "$sal"}, topSalary: {$max: "$sal"}, leastSalary: {$min: "$sal"}, averageSalary: {$avg: "$sal"} }})
+
+
+update 
+==========
+update()
+updateOne({}, {})
+updateMany({}, {})
+
+db.emps.updateOne({empno: 7900}, {$set: {sal: 1010}})
+db.emps.updateMany({deptno: 20}, {$set: {sal: 1010}})
+
+
+hands on -5 has 2 tasks 
+1)nodejs, expresjs                      handle_bar 
+2)ReactJS                               draggable  
+
+hands_on-5
+    handle_bar 
+        keep your efforts 
+    draggable
+        keep your efforts

@@ -1,0 +1,543 @@
+
+
+NodeJS is used to develop server based applications,
+by executing javascript code.
+So far js code is executed in browsers engines. But bz of NodeJS 
+We able to execute js files, out side of Browsers. 
+
+The main architecture of Node JS is, it is collection of 
+Chrome V8 and libUV.
+Chrome 8 is extracted from Chrome browser, for the purpose of execution 
+js files out side of Browsers. 
+
+libUV is used to handle and develop multi processing programming
+
+Setup 
+======
+To work with node js, we must install NodeJS, from Nodejs.org
+NodeJS installation mainly producess following files,
+Those are 
+1)node.exe
+2)npm.exe 
+3)npx.exe 
+These are technically called as tools.
+
+NodeJS Project Setup 
+======================
+
+What ever we learned in JS , all the things we use as it is in Nodejs based
+js files, except window and document such kind of things 
+
+The major things what suppose we are doing in nodejs based js files are:
+1)develop http based programming (client and server communication programming)
+2)communicating with various databases like mysql, mongo, postgrace etc 
+3)working with files. streams 
+
+Note: V8 Engine does not have capability to perform DOM manipulations.
+
+
+operators 
+======== 
+arithmetic operatos 
+logical operators 
+relational operators 
+
+
+all the things we can use as it is in nodejs based js files 
+
+
+basic programming of js 
+======================
+if conditions 
+switch
+loops 
+arrays 
+string 
+
+all such kind of things we can use as it is in node js based files .
+
+REPL stand for read–evaluate–print loop
+It is one of the feature of Node.
+
+NodeJS Project Setup 
+======================
+npm init 
+
+global objects: 
+==================
+console 
+process 
+__dirname 
+__filename 
+setInterval, setTimeout, setImmediate, clearInterval, clearTimeout, clearImmediate 
+require 
+Buffer 
+Event 
+modules
+exports 
+
+bz of this, package.json file is produced.
+15-Feb-2022
+===========
+npm i mongodb
+
+16-Feb-2022
+===========
+http module 
+http module is used to develop client - server communication based applications.
+http is a built in module, which is available by default along with nodejs, 
+So to work with http module we no need to install it 
+
+steps to working with http module 
+============================== 
+1)import http module 
+2)create server 
+3)register the server with particular port to make it listen the client request.
+4)develop request handleres based request paths
+
+
+To develp above application first we should create nodejs application 
+1)create one folder 
+2) go inside at cmd and execute npm init, 
+    bz of this command, package.json is produced.
+
+
+technology          port 
+===========================
+angular             4200
+reactjs             3000
+nodejs              5000 
+mongodb             27017
+
+
+Note: after developping application, we should run or start the application, 
+to take the client requests 
+
+node index.js 
+
+some important properties of req object 
+===========================================
+1)url 
+2)method
+3)headers
+
+to parse the url and get the query string data we will use built in module 
+that is require('url')
+
+Any working with http module for the purpose of developping REST API applications is 
+very difficult, to over come this problem soletion is provided in the 
+form of expressjs module, 
+
+So to work with expressjs, it must be  installed 
+npm i express 
+
+Note : for every small modification of code , suppose we are going to restart the server 
+to over come this problem solution is provided in the form of nodemon, 
+So we shuld install it 
+npm i -g nodemon
+
+working with express js 
+=======================
+
+note: express js is developed by using http module only
+
+while we are working with expresss js , some important properties of req object are 
+params 
+query 
+body
+
+17-Feb-2022
+============
+usually server app names will be given as 
+
+index.js 
+app.js 
+main.js
+server.js 
+
+db      collectin
+admin   emps 
+cts     c67_emps
+18-Feb-2022
+===========
+getAllEmployees 
+addEmployeed 
+updateEmployee
+deleteEmployee
+
+
+middleware 
+==========
+middleware is a function which is used in expressjs, to interrupt client requests 
+and perform pre and post operations.
+
+usually middle ware function takes 3 arguments 
+1)req, 
+2)res 
+3)next 
+
+1)req: actual current request object only
+2)res : actual current res object only
+3)next : it reference to function (we can say as call back function )
+which is used to invoke next available middle ware function, 
+if next available middle ware function is not available 
+then controller is getting chnnce to execute.
+
+
+Note: usually middle ware function is used in route handler function 
+in between path and controller
+
+
+Hands on -5 
+===========
+HandsOn-5
+    handlebar
+    draggable
+MongoDB 
+========
+1)first pure mongo db we learning 
+    mongo shell 
+2)mongodb with nodejs 
+    using mongodb driver 
+3)Mongoose 
+4)Mongoose with Nodejs/Expressjs    
+
+
+pls remove environ variable port.
+
+Mongoose 
+=========
+Mongoose is an ORM for MongoDB.
+What is an ORM?
+ORM stands for Object Relational Model.
+What is the need of orm s
+If there is no orm, we have do a lot hectic task to convert data types.
+
+
+By Using ORM, we can control the structure of collectoin at application level (Node Level),
+we should not allow other properties which not part of our collection.
+we can control data types 
+we can control validations and invalid data 
+
+To work with mongoose we should install mongoose lib
+
+npm i mongoose
+
+Woring with mongoos in Nodejs 
+=================================
+1)install mongoose lib 
+2)create sheema which can match to your db collection 
+3)create Model 
+4)execute dml ooperations or curd operations using either model or its instance.
+
+
+
+schema: scheema is nothing set or rules about Model and collection
+
+
+21-Feb-2022
+============
+packaging 
+
+Developping custom packages and publishing to npm for the purpose of 
+make it available our libraries to public.
+
+steps to develop custom packages 
+================================
+1)create your custom package folder (app /lib)
+2)apply git init 
+    for the purpose of git configuration 
+3)npm init 
+    in this process we are going to configure following things 
+        1)package name, how it is availabe to public 
+        2)start up file , that is nothing but main propery
+4)develop your operations for your module or package purpose 
+5)npm publish 
+
+Note Before publishing we have test it 
+
+5)npm link 
+    we have to execute above command in owner of package folder.
+    in thisn process, package is bundled and moved to global location,
+    for the purpose make it available to testing.
+Testing 
+=========
+6)create one test folder 
+7)to make it available test library or package 
+    we have to offer following command 
+    npm link 'pkg_name'  
+    npm link murali_arith
+8)just develop one test case for testing package 
+     and execute your test case.
+    if every thing is expected, then publish it .
+
+publishing 
+===========
+1)go to you package folder at cmd 
+2)npm publish 
+Note: To publish, packages to npm, 
+we must have a/c in npm 
+3)By the time of publishing, it is asking for login credentias, 
+    other wise publish will be failed.
+Conclusiong is: before publishing , we must login,
+    for that purpose command is as follows
+    npm login   
+    username: 
+    password: 
+    otp: 
+4)npm publish
+5)test your package at npmjs.org 
+
+6) official tesing by installing that library
+
+22-Feb-22
+==========
+File Upload
+===========
+Multer
+=======
+Multer is a popular js library to upload the files and simplified activites 
+for developers 
+So to work with multer we should install multer 
+
+npm i multer 
+
+To work with multer first we should create one 
+server application 
+
+for that purpose we should install expressjs
+npm i express 
+
+Note: multer acts as middle ware, 
+we should call multer after requrest path , before request handler.
+
+
+Templates 
+============
+Templates are used for server side rendering 
+
+ejs is most popular library or package for server side rendering template engine.
+
+So to work with templates, we should install ejs
+
+23-Feb-2022
+============
+1)fs 
+fs stands file system,
+this module is used for working files, folders, 
+read data from file, write data into file, 
+get file information, create new folder, 
+delete folder, delete file, 
+provide the file permissions.
+
+to work with this module we should import it.
+
+this module provides veriaty of methods to working files and as well as folders.
+
+1)asynchronus methods 
+2)synchronus methods 
+3)streams 
+4)pipes 
+
+1)asynchronus methods 
+=======================
+various file operations 
+=========================
+1)read data from file or open file 
+2)write data into file 
+3)append data into file 
+4)delete file 
+
+1)read data from file or open file 
+readFile()
+    This function is used to read data of file, 
+    This function works in asynchronus mode.
+    This function takes 2 arguments,
+    1)file path 
+    2)call back function with 2 arguments 
+        1)err 
+        2)data or result
+    if file is alreaady available and path is correct, then file will be opend 
+    successfully. 
+    If file is not existed, then we get error
+
+    Node: by default while reading data , data is available in Buffer format.
+
+writeFile():
+    This function is used to write data into file.
+    this function works in asynchronus mode 
+    this function takes 3 arguments 
+    1)file path 
+    2)data which supose has to be written into file.
+    3)call back function, which taks err argument 
+
+    if file is already existed then that file is opend for the purpose write data into file.
+    and the data which is provided as second argument that will written into file.
+    on success of operation, call back function is called.
+    Note: file content is over ridden in case of existed files
+
+    if file is not existed then new file is opend and data will be written into file.
+
+appendFile():
+    1)This function is used to append data to file.
+    2)if file is not existed then a new file is created, and data will be written into file.
+    3)if file is already existed, then that will be opend in append mode and 
+    data will be added at end of file.
+    That means file contents will be preserverd 
+
+    This function takes 3 arguments 
+    1)file path 
+    2)data 
+    3)call back function
+
+4)delete file 
+    unlink() this function is used remove the specified file.    
+
+
+streams : 
+stream is nothing but flow of data 
+we have 2 types of streams 
+1)readStream 
+2)writeStream 
+
+1)readStream : is used to read data from file or resource 
+2)writeStream: is used to write data into file or resource.
+
+Events 
+
+event is nothing but a programmatic action in applications.
+For ex: opening a file, reading data from a file, reaching end of the file, 
+closing file, function invocation, function completion etc 
+
+To meet this requirement nodejs has provided package in the form of events 
+
+Developping custom events 
+===========================
+To develop the custom events nodejs has provided api in the form of EventEmitter 
+
+steps to develop custom event 
+=================================
+1)import events module 
+2)create a reference variable for EventEmitter. 
+3)create event handlers (nothing but normal functions) as per your requirements 
+4)register the event handlers associated with events 
+5)trigger(raise) the event
+
+when ever an event is triggered, then its assocated event-handler will be executed.
+
+
+Now we will see some built in event s 
+
+
+Ex: Reader Stream 
+================== 
+open 
+data 
+end 
+close 
+
+Ex: Writer Stream 
+================== 
+open  
+close 
+
+
+pipes 
+=========
+pipe is nothing communication between streams 
+
+Events 
+Event Emitter
+FileSystem
+Streams 
+Pipes 
+
+
+24-Feb-2022
+===========
+auth 
+auth means 
+
+1)authentication
+2)Authorization
+
+1)authentication
+===================
+is nothing but login credentials 
+
+2)Authorization
+================
+is nothing but roles
+
+
+26-Feb-2022
+============
+Cookies 
+========
+1) Cookie is nothing a small data unit, whch can contain 
+at most a pair of name and value information.
+2) Usually cookies are created at server side and added to response, 
+    In that way cookies will be send to client and resides at client side browser.
+3) All the cookies which are resides at browser associated with a particular URL, 
+     those will be always send to server along with each and every request, 
+    to make it available at server side.
+
+4) For each request process these cookiess may not be usefull, 
+    but even all cookies will be sent from client to server along with each request.
+
+    res.cookie("user_name", "ramu") 
+    res.cookie("email", "ramu@gail.com") 
+    res.cookie("age", "45") 
+    res.cookie("mobile", "7788554499") 
+
+Note: by default cookies we cant extract from req object , 
+even though those are available.
+to extreact the coookies, from req object we should install cookie-parser    
+
+npm i cookie-parser
+
+Ussage of cookie parser 
+
+var cookieParser = require('cookie-parser')
+
+
+app.use(cookieParser())
+
+
+session 
+=========
+session is nothing an uninterrupted communication between client and server.
+
+The request which is submitted by client will be maintain at server side only upto 
+processing of that particular request. Once res is generated , then immediatly
+req, res object will be destroyed.
+
+
+But http protocol by default does not maintain persistance of request 
+It is technically cally called as stateless protocall
+tcp protocol will maintan log of request . statefull protocal 
+
+
+The information which is provided by client at first request, may be required 
+by the time of processing further requests, which is not available by default.
+
+To meet this requrement, solution is provided into form of following things 
+1)cookies 
+2)session
+
+session is nothing a small object which is created at server side,
+and resides at server side only.
+Usually session is used to hold user personal data temperarly.
+
+Usually session is created when a client is given first requrest to server, 
+and session will be destroyed when client logged out , 
+or client took more time than specified one, session will be automatically destroyed.
+
+session in Nodejs 
+To work with sessions, in Node JS , We have to install express-session
+npm i express-session
+
+
+var session = require('express-session')
+
+app.use(session({secret: "some secrete key"}))

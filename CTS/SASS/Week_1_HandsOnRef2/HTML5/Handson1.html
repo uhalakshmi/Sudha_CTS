@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson</title>
+    <style>
+        body {
+            font-family: Calibri;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .block1 {
+            background-color: #333333;
+            height: 80px;
+        }
+
+        .content {
+            width: 1000px;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .block1 h1 {
+            font-size: 48pt;
+            font-weight: 100;
+            color: white;
+            display: inline-block;
+            margin: auto;
+
+        }
+
+        .block1 ul {
+            list-style-type: none;
+            float: right;
+        }
+
+        .block1 ul li {
+
+            float: left;
+            padding: 10px 10px;
+
+        }
+
+        .block1 ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16pt;
+
+        }
+
+        .block2 {
+            height: 45px;
+        }
+
+        .block2 ul {
+            list-style-type: none;
+            padding-left: 0px;
+            margin: 0px;
+            height: 10px;
+        }
+
+        .block2 ul li {
+            float: left;
+            padding: 10px 8px;
+            margin-top: 0px;
+        }
+
+        .block2 ul li a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 16pt;
+        }
+
+        .search_box {
+            font-size: 10px;
+            float: right;
+            margin-top: 0px;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        .heroku {
+            background-color: #ededef;
+            color: #333333;
+            height: 350px;
+            margin: auto;
+        }
+
+        .heroku-img {
+            width: 20%;
+            margin: 0px;
+        }
+
+        .heroku-img img {
+            width: 100%;
+            margin-top: 40%;
+        }
+
+        .heroku-title {
+            width: 39%;
+            font-size: 58pt;
+            padding: 75px 0px;
+            padding-left: 8px;
+        }
+
+        .heroku-msg {
+            width: 40%;
+            font-size: 16pt;
+        }
+
+        .dealsbox {
+            float: left;
+            width: 12%;
+            padding: 0px 23px;
+        }
+
+        .dealsbox img {
+            height: 140px;
+            width: 100%
+        }
+
+        .dealsdata {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .product-container {
+            display: inline-block;
+            background-color: #dbf3fa;
+            padding: 6px;
+            margin-right: 60px;
+            margin-bottom: 40px;
+        }
+
+        .product-container img {
+            width: 175px;
+        }
+
+        h4 {
+            font-size: 20pt;
+            font-weight: 400;
+            color: #333333;
+            text-align: center;
+            margin: 5px auto 3px;
+        }
+
+        .block3 {
+            height: 200px;
+        }
+
+        .block3 ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        .block3 ul li {
+            float: left;
+            padding: 7px 0px;
+        }
+
+        .block3 ul li a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 14pt;
+            padding: 0px 5px;
+        }
+
+        .footer {
+            background-color: #131a22;
+            width: 100%;
+            color: white;
+            height: 300px;
+
+        }
+        .col{
+            float:left;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            padding-left: 0px;
+            padding-right: 27px;
+            margin-top:0px;
+        }
+
+        .footer ul li {
+            
+            font-size: 16pt;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h3 {
+            font-size: 18pt;
+            font-weight: 400;
+            margin-bottom:0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="block1">
+            <div class="content">
+                <h1>eStore</h1>
+                <ul>
+                    <li style="padding-left: 0px;"><a href="">My Account</a></li>
+                    <li><a href="">Wish List</a></li>
+                    <li><a href="">Shopping</a></li>
+                    <li><a href="">Cart</a></li>
+                    <li style="padding-right: 0px;"><a href="">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="block2">
+            <div class="content">
+                <ul>
+                    <li style="padding-left:0px;"><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Protective Wear</a></li>
+                    <li><a href="">Footwear</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Friday Casual</a></li>
+                </ul>
+                <input type="search" class="search_box" size="30" placeholder="Search for Products & Brands">
+            </div>
+        </div>
+    </div>
+    <div class="heroku">
+        <div class="content flex-container">
+            <div class="heroku-img ">
+                <img src="./asset/images/mask.jpg" alt="Mask">
+            </div>
+            <div class="heroku-title">
+                STAY HOME,
+                STAY SAFE.
+            </div>
+            <div class="heroku-msg ">
+                <p>Contactless Deliveries</p>
+                <p>All delivery staff trained in COVID-19 preventive measures</p>
+                <p>All Delivery and warehouse staff are equipped with medical-grade hand Santizers</p>
+                <p>All warehouses staff undergo daily mandatory thermal temperature scanning</p>
+                <p>No deliveries in 'highly affected' areas</p>
+            </div>
+        </div>
+    </div>
+    <div class="deals">
+        <div class="content">
+            <p style="font-size:30pt;font-weight: 300;"><b style="font-size:35pt;font-weight:500;">D</b>eals of the day
+            </p>
+            <div>
+                <div class="dealsbox">
+                    <img src="asset/images/placeholder.png" alt="placeholder">
+                    <div class="dealsdata">
+                        <p>Sports & Fitness Gear<br>Upto 80% Off</p>
+                    </div>
+                </div>
+                <div class="dealsbox">
+                    <img src="asset/images/placeholder.png" alt="placeholder">
+                    <div class="dealsdata">
+                        <p>Branded Jeans<br>Upto 50% Off</p>
+                    </div>
+                </div>
+                <div class="dealsbox">
+                    <img src="asset/images/placeholder.png" alt="placeholder">
+                    <div class="dealsdata">
+                        <p>Branded T-Shirts<br>Upto 60% Off</p>
+                    </div>
+                </div>
+                <div class="dealsbox">
+                    <img src="asset/images/placeholder.png" alt="placeholder">
+                    <div class="dealsdata">
+                        <p>Sports & Fitness Gear<br>Upto 50% Off</p>
+                    </div>
+                </div>
+                <div class="dealsbox">
+                    <img src="asset/images/placeholder.png" alt="placeholder">
+                    <div class="dealsdata">
+                        <p>Branded Kids T-Shirts<br>Upto 40% Off</p>
+                    </div>
+                </div>
+                <div class="dealsbox">
+                    <img src="asset/images/placeholder.png" alt="placeholder">
+                    <div class="dealsdata">
+                        <p>Sports Girls T-Shirts<br>Upto 50% Off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="fashion">
+        <div class="content">
+            <p style="font-size:30pt;font-weight:300"><b style="font-size:35pt;font-weight:500;">F</b>ashion Categories
+            </p>
+            <div class="container">
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>Kurtas</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>Shirts</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>Pants</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>TShirts</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>Shoes</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>Casual Shirts</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>JEANS</h4>
+                </div>
+                <div class="product-container">
+                    <img src="./asset/images/placeholder.png" alt="">
+                    <h4>Tops</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block3">
+        <div class="content">
+            <div style="width:100%;">
+                <ul>
+                    <li><a href="">Adidas</a>|</li>
+                    <li><a href="">Arrow</a>|</li>
+                    <li><a href="">Fila</a>|</li>
+                    <li><a href="">Online Shopping</a>|</li>
+                    <li><a href="">Nike</a>|</li>
+                    <li><a href="">Pepe Jeans</a>|</li>
+                    <li><a href="">Puma</a>|</li>
+                    <li><a href="">United Colors of Benetton</a>|</li>
+                    <li><a href="">Fastrack</a>|</li>
+                    <li><a href="">Shorts</a>|</li>
+                    <li><a href="">Being Human</a>|</li>
+                    <li><a href="">Skirts</a>|</li>
+                    <li><a href="">Woodland</a>|</li>
+                    <li><a href="">Supra Dresses Clothing</a>|</li>
+                    <li><a href="">Jewellery</a>|</li>
+                    <li><a href="">T-shirts</a>|</li>
+                    <li><a href="">Shoes</a>|</li>
+                    <li><a href="">Bags</a>|</li>
+                    <li><a href="">Watches</a>|</li>
+                    <li><a href="">Caps</a>|</li>
+                    <li><a href="">Shirts</a>|</li>
+                    <li><a href="">Backpacks</a>|</li>
+                    <li><a href="">Flip Flops</a>|</li>
+                    <li><a href="">Puma</a>|</li>
+                    <li><a href="">Sunglasses</a>|</li>
+                    <li><a href="">Kurtas</a>|</li>
+                    <li><a href="">Jackets</a>|</li>
+                    <li><a href="">Skechers</a>|</li>
+                    <li><a href="">Saree</a>|</li>
+                    <li><a href="">Sandals</a>|</li>
+                    <li><a href="">Puma Tshirts</a>|</li>
+                    <li><a href="">Woodland Shoes</a>|</li>
+                    <li><a href="">Titan Watches</a>|</li>
+                    <li><a href="">Fastrack Watches</a>|</li>
+                    <li><a href="">Wrangler Shirts</a>|</li>
+                    <li><a href="">Adidas Tshirts</a>|</li>
+                    <li><a href="">Nike Shoes</a>|</li>
+                    <li><a href="">Roadster Shirts</a>|</li>
+                    <li><a href="">Casual Shoes</a>|</li>
+                    <li><a href="">Running Shoes</a>|</li>
+                    <li><a href="">Nike Sports Shoes</a>|</li>
+                    <li><a href="">Jeans</a>|</li>
+                    <li><a href="">Being Human</a>|</li>
+                    <li><a href="">T-shirts</a>|</li>
+                    <li><a href="">Converse Shoes</a>|</li>
+                    <li><a href="">Cricket Shoes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <div class="col">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Returns/Refunds</a></li>
+                    <li><a href="">Cloud Economics</a></li>
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="">Payment Options</a></li>
+                    <li><a href="">Terms & Conditions of Use</a></li>
+                    <li><a href="">Terms & Conditions of Membership Program</a></li>
+                    <li><a href="">Offer Terms & Conditions</a></li>
+                    <li><a href="">Returns & Exchange Policy</a></li>
+                    <li><a href="">Shopping Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Safety Checklist</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="">Customer Support</a></li>
+                    <li><a href="">Store Locators</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <h3>ABOUT US</h3>
+                    <li><a href="">Official Brand Store</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

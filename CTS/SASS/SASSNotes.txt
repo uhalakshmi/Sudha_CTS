@@ -1,0 +1,280 @@
+SASS
+====
+1)SASS stands for Syntactically Awesome StyleSheets
+2)It can be called as CSS Preprocessor or CSS Language or Extenssions
+3)It is almost same as other computer programming languages.
+4)We can write conditions, functions etc here
+5)sass files extenssion must be (.scss) or (.sass)
+6)we have varity of compilers for SASS, to compile and generate CSS.
+  Its official web site is: https://sass-lang.com/
+7)First Version is released in 2006
+8)Latest stable version is: 3.5.6 
+
+Setup
+=====
+1)We can install sass compiler by using NPM,
+2)We have extenssions in VSCode level
+
+Setup
+=======
+1)npm install -g sass
+
+version checkup
+===============
+sass --version 
+
+First Example
+styles.scss
+=======
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+Syntax: 
+sass <input file> <output file>
+sass file.scss file.css 
+sass ./scss/styles.scss ./css/styles.css 
+
+watch mode:
+===========
+sass --watch ./scss/styles.scss ./css/styles.css 
+
+above command keep running in watch mode, 
+If we do any changes in source file, then those changes will be automatically
+converted/transformed to css file.
+
+Variables: 
+===========
+variables can be declared in scsss files in following way.
+variable must start with $ by the time of declaration and as well as ussage time.
+
+$myColor: 'blue';
+
+h3{
+  color: $myColor;
+}
+
+The major advantages of variables is, if we do changes at single location, 
+where ever this variable is used, in all location that change will be automatically 
+applyed.
+In that way we highly reduce maintance time.
+
+Nesting: 
+Sass lets you nest CSS selectors in the same way as HTML.
+nested selectors or classes
+===========================
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+}
+
+nested css properties
+===========================
+.myClass{
+    font: {
+      family: Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+
+    text: {
+      align: center;
+      transform: lowercase;
+      overflow: hidden;
+    }
+}
+
+
+1)variables
+variables scopes 
+nesting 
+selector nesting 
+property nesting 
+code snippets as files or file snippets 
+file snippets usually start with _
+@import directive
+importing the file snippets into another file using @import "file" 
+  1)under score is not required 
+  2)extension is not required 
+@mixins directive
+mixins will be immerged in to another selectors or another mixins using @import directive  
+@mixins can take parameters 
+@mixins parameters can be made as default parameters 
+
+2)code snippets or scss/sass file snippets or partial scss/sass files 
+
+
+20-Jan-2022
+===========
+DRY
+1)variables (using $)
+2)nesting 
+  1)selector nesting 
+  2)property selector 
+3)comments 
+        //
+        /**/
+        /*!*/
+4)partials or snippets 
+5)@import directive 
+6)parent selector   (&-)
+7)@mixin directive  
+8)@include directive
+
+
+interpolation 
+===============
+interpolation is nothing but #{}, 
+It is used to process some expressions, and producess result .
+
+operators: 
+==========
+arithmetic operators: +, -, *, /, %
+relational operators: >, >=, <, <=, ==, !=
+logical operators: and, or 
+
+mern 
+=====
+js
+====
+&&
+||
+==========
+Mongo 
+?
+ExpresJS
+============
+&&
+||
+ReactJS 
+========
+&&
+||
+NodeJS
+======
+&&
+||
+
+
+@extend directive 
+=================
+@extend directive is used extend the features of selectors 
+into some other selectors.
+In pure css 
+============
+.x{
+  font-size: 16px;
+  color: red;
+}
+
+.y{
+  font-size: 16px;
+  color: red;
+  margin: 10px;
+  padding: 5px;
+}
+
+=================================
+nav ul{}
+===================================
+.x, .y{
+  font-size: 16px;
+  color: red;
+}
+
+.x{
+  margin: 30px;
+  padding: 2px;
+}
+.y{
+  margin: 10px;
+  padding: 5px;
+}
+=========================================
+
+.x{
+  font-size: 16px;
+  color: red;
+  margin: 30px;
+  padding: 2px;
+}
+.y{
+  font-size: 16px;
+  color: red;
+  margin: 10px;
+  padding: 5px;
+}
+
+10x + 20y = 30 
+x + 2y = 3;
+
+.x, .y{
+    font-size: 16px;
+    color: red;
+}
+
+.x{
+  margin: 30px;
+  padding: 2px;
+}
+.y{
+  margin: 10px;
+  padding: 5px;
+}
+
+==============================
+/*
+.x, .y{
+    font-size: 16px;
+    color: red;
+}
+
+.y, .z{
+    margin: 10px;
+    padding: 5px;
+}
+.y{
+
+}
+.z{
+
+}
+.x{
+
+}
+=================================
+.x{
+    font-size: 16px;
+    color: red;
+}
+.y{
+    font-size: 16px;
+    color: red;
+    margin: 10px;
+    padding: 5px;
+}
+.z{
+    margin: 10px;
+    padding: 5px;
+}
+*/ 
+
+built in modules : 
+====================
+number
+string 
+list 
+colors 
+map 

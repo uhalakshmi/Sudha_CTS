@@ -1,0 +1,23 @@
+.x, .y {
+  font-size: 16px;
+  color: red;
+}
+
+.y {
+  margin: 10px;
+  padding: 5px;
+}
+
+/*
+.x, .y{
+    font-size: 16px;
+    color: red;
+}
+
+.y{
+    margin: 10px;
+    padding: 5px;
+}
+*/
+
+/*# sourceMappingURL=extend.css.map */

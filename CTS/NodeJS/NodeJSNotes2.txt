@@ -1,0 +1,246 @@
+NodeJS 
+========
+NodeJS is a technology which is used to develop server based applications 
+by using javascript.
+
+Basically java script is loaded in client browsers and there it self executed.
+Usually js wont executed out side of browsers. 
+
+But bz of NodeJS, js is executed out side of browsers also.
+
+Suppose if we are developping js files for the purpose of NodeJS, 
+So at that time, we should not write use window, document objects.
+Bz Nojejs Engine not supports window and documents objects.
+
+
+The main idea of Node JS is, to make it execute javascript out side of browser engines.
+To meet this require ments, NodeJS is developed by extracting Chrome V8 Engine from Chrome 
+Browsers.
+
+The main archetecture of NodeJS or core concepts of Nodejs is 
+1)Chrome V8 
+2)libUV 
+
+
+1)Chrome V8 : is used to execute js files out side of browser 
+2)libUV : is used to develop multi processing programming at server side application
+
+
+In current market, Nodejs is one the fastest server based applicaiton.
+
+To working NodeJS , first we should installl NodeJS.
+Its official web site is : nodejs.org 
+Its first version is released in 2009
+Its current latest version is : 16
+
+after installing NodeJS, Following impoortant tools will be installed 
+
+1)node 
+2)npm 
+3)npx 
+
+1)node : By using this tool we can execute js files out side of browser. 
+2)npm : it is a tool which can perform a veriaty of operatons. 
+    like project creation, libraries installations of project, project running, project testing,
+    project building etc. 
+3)npx : by using it we create react js project , we start json-server etc.
+
+Note: 
+    what ever we used or learned while developping java script, every thing can be 
+    used at it is in node js programming except window, and documnt like DOM manipulations
+
+
+Ex: 
+    Operators 
+    1)Arithmetic operators 
+    2)Relational Operators 
+    3)Logical Operators 
+
+And basic programming concepts of js can be used as it in Nodejs programmng.
+    Ex:     if
+            if-else 
+            looping 
+            while, do-while, for loop, for in , for of
+            switch 
+
+            arrays 
+            object 
+            string 
+            function programming 
+
+basically nodejs is developped by considering ES6 standards.
+
+
+
+Note: in case of Nodejs, usually file extension is .js 
+
+REPL Terminal: read–evaluate–print loop
+It is one of the greates feature of V8 Engine.
+which is used to perform basice operations
+
+Major Topics In NodeJS 
+=========================
+1) http programming : by using http programming we can achieve client - server communication 
+2) db communication programming  
+    mysql, mongo db, post grace etc 
+3)file syste programming woring with files 
+    etc     
+
+Nodejs Project/application set up 
+======================================
+1) npm init 
+    it generates a package.json 
+
+Global Objects,
+================
+usually it is called as globals 
+global object might be a variable, or function, a class or object
+
+The things which can be usable with out import in side js files 
+those objects are called as globals.
+
+1)console.log();
+2)setTimeout, clearTimeout 
+3)setInterval, clearInteval
+4)setImmediate, clearImmediate
+5)__dirname , __filename 
+6)require 
+7)module 
+8)export 
+9)process 
+10)url 
+11)url search params 
+12)Buffer 
+13)Event     
+
+
+    5)__dirname : it is a variable which holds current folder  path
+    , __filename : it is a variable, which holds current file path. 
+
+
+process: 
+    is used to get enviroment details or variables 
+    process.env.    
+
+
+module
+=======
+module is a one global object in nodejs .
+it is playing a vital role in node js project 
+to develop the application in the form of modules 
+by improving modularity of applicatin and reusability
+
+variable:
+    __dirname, __filename 
+
+functions: 
+    setTimeout, clearTimeout, setInterval, clearInterval,
+    setImmediate, clearImmediate, 
+    require 
+class: 
+    Buffer
+object: 
+    console 
+    module 
+    process 
+
+
+global object 
+modules 
+
+call backs 
+
+working with mongodb 
+====================
+Note: to work with mongodb, first we should install mongodb library;
+
+npm i mongo  
+
+Note2: to working with mongodb, mongodb server shouldb be in running mode.
+
+Usually it runns on 27017 port .
+
+If we are working with local mongo, 
+then in that case it url to connect server is 
+    let url = 'mongodb://localhost:27017/'
+    let url = 'mongodb://127.0.0.1:27017/'
+
+Note3: to work with mongodb, 
+first we should impoet 'mongodb' lib.   
+
+15-Feb-2022
+============
+http module 
+working with http module 
+======================= 
+by using http modules, we develop client -server 
+communication based back end application.
+
+steps to create server application by using http 
+==================================================
+1)import http module 
+2)create server 
+3)register the server with port 
+4)develop routes 
+
+
+Angular : 4200
+ReactJS : 3000
+NodeJS :  5000
+MongoDB : 27017
+
+port configuration as environment variable 
+===========================================
+working with parameters 
+to work with parameters we should take help url module.
+
+
+by using http developping rest api application is very dificult.
+To over come this problem , solution is provided in the form of express js framework.
+
+So to work with expresjs we must installl express js 
+
+npm i express
+
+nodemon
+==========
+Note: while working with server applications http, 
+for each and every modification, to make it effect the changes to server,
+we should stop the server and restart.
+this is very difficult approach to restart server for every small changes.
+
+To over come this problem automatically restart the server for every modifications
+we are going to take the help of nodemon.
+we should install it at global location ( -g)
+
+npm i -g nodemon
+
+steps to work with express 
+===========================
+1)import express 
+2) cerate app variable for express(); 
+3)call http method for respective paths using app variable 
+4)register app with particular port to make application listen requests 
+
+working with params 
+========================
+
+important properties of req object 
+===================================
+1)params 
+2)query 
+3)body
+baseUrl 
+originalUrl 
+route
+method 
+url 
+headers
+
+Note: 
+By using http get method, body is not generated. 
+to generate body we should send post requests 
+
+
+tomorrow we can develop fullfledged rest api by integrating mongodb, ans as well as front end 
+react js app

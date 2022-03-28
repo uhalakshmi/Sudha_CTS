@@ -1,0 +1,36 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  /* grid-row-gap: ; */
+  /* row-gap: 1em; */
+  /* grid-column-gap: ; */
+  /* column-gap: 1em; */
+  gap: 1em 5em;
+  /* background-color: #2196f3; */
+  background-color: #003466;
+  /* #003466 */
+  padding: 20px;
+}
+
+.grid-container .fashion-item-container {
+  width: 200px;
+  /* height: 240px; */
+  height: auto;
+  background-color: #dbf3fa;
+  padding: 5px 5px 15px;
+  margin: 20px 0px 40px;
+}
+
+.grid-container .fashion-item-container img {
+  width: 100%;
+  height: auto;
+  /* text-align: center; */
+  /* margin: auto; */
+}
+
+.grid-container .fashion-item-container h4 {
+  text-align: center;
+}
+/*# sourceMappingURL=hands-on3.css.map */

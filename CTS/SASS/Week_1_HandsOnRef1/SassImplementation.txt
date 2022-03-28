@@ -1,0 +1,89 @@
+1)Remove internal css from html file and move them to scss file.
+2)for that purpose first create one scss file with name styles.scss and 
+    move all internal css from html to scss file.
+3)go to cmd and transfile scss file in to css file 
+4)link the generated css file with html.  
+
+SASS highly supports  DRY(Don't Repeat Yourself) rule.
+
+1)variables: 
+variable declaration:
+=====================
+$var_name: value;
+
+
+variables usage: 
+================
+
+.some-class{
+    property: $var_name;
+}
+
+ @import directive & @include directive
+ =================
+2)code snippets or scss/sass file snippets or partial scss/sass files 
+    1)create one variables file with file extention .scss 
+    2)import that variables file into main scss file by using @import directive.
+    syntax: 
+    @import 'variables'
+    Note: file extension is optional.
+
+    Note: for partial files if we dont want generate separate .css file, 
+    then recommend create partial files with _ prefix.
+    In that way we avoid individual .css file generation for partial files
+
+    Note: while importing partial files, "_" is optional.
+
+3)nesting 
+1)selector nesting 
+2)property nesting   
+
+4)Comments 
+
+    1) multi line comments 
+        /*
+            but this comment is produced in compressed file also 
+        */
+    2) multi line comments 
+        /*!
+           these comment wont produced in compressed file
+        */
+    3)single line comments 
+        //     single line comments 
+    4)
+        we can write multi-line comments at any location    
+
+
+5)Perent Selector: 
+====================
+Normal css: 
+===========
+a{
+    font-size: 20px;
+    color: red;
+    padding: 20px;
+    background-color: #e3e3e3;
+}
+a: hover{
+    cursor: pointer; 
+    color: green;
+}
+
+SCSS css: 
+===========
+a{
+    font-size: 20px;
+    color: red;
+    padding: 20px;
+    background-color: #e3e3e3;
+
+    &: hover{
+        cursor: pointer; 
+        color: green;
+    }
+}
+
+
+@mixin directive
+=================
+mixin is used to define partial and reusable selectors, or a group of properties.

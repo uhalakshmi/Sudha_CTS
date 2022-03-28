@@ -1,0 +1,29 @@
+body {
+  background-color: #e3e3e3;
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  font-family: Verdana;
+  font-size: 36px;
+  color: blue;
+}
+
+.test1 {
+  color: #f2d70c;
+  text-align: center;
+}
+
+.test2 {
+  color: #f2d70c;
+  text-align: left;
+  font-family: arial;
+}
+
+.test3 {
+  color: #f2d70c;
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

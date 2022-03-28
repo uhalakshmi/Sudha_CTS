@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/header.css">
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">AbountUs</a></li>
+            <li><a href="/operations">Operations</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/contactus">ContactUs</a></li>
+            <% if(!req.session.token){ %>
+                <li><a href="/login">Login</a></li>
+            <% } %>
+            <% if(req.session.token){ %>
+                <li><a href="/logout">Logout</a></li>
+            <% } %>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,35 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-row-gap: ; */
+    /* row-gap: 1em; */
+    /* grid-column-gap: ; */
+    /* column-gap: 1em; */
+    gap: 1em 5em;
+    /* background-color: #2196f3; */
+    background-color: #003466;
+    /* #003466 */
+    padding: 20px;
+
+    
+    .fashion-item-container{
+        width: 200px;
+        /* height: 240px; */
+        height: auto;
+        background-color: #dbf3fa;
+        padding: 5px 5px 15px;
+        margin: 20px 0px 40px;
+
+        img{
+            width: 100%;
+            height: auto;
+            /* text-align: center; */
+            /* margin: auto; */
+        }
+
+        h4{
+            text-align: center;
+        }
+    }
+}
+

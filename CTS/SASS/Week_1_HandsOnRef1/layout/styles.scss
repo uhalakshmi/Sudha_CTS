@@ -1,0 +1,267 @@
+@import '_variables';
+
+@mixin normal-font {
+    font-size: 16pt;
+}
+
+    body {
+        width: 1000pt;
+        font-family: Calibri;
+    }
+    //     single line comments
+    /*
+        above one is demo of single line comment, and more over single line comments 
+        are not generated in css file.
+    */  
+    /*!
+    header ul li {
+        list-style-type: none;
+    }
+    */
+
+    
+    header {
+        ul {
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+    /*
+    header {
+        ul {
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+    */
+    
+    /* this is demo of multiline comments at any location*/
+    header /* this is demo of multiline comments at any location*/ ul li a {
+        text-decoration: none;//
+    }
+    
+    .header1 {
+        // background-color: $black_color;
+        background-color: lightness($black_color);
+        display: flex;
+    }
+    
+    .menu {
+        
+        color: #fff;
+        /*
+        font-size: 48pt;
+        font-weight: normal;
+        */
+        font: {
+            size: 48pt;
+            weight: normal;
+        }
+        padding-left: 80pt;
+        box-sizing: border-box;
+        margin: 0pt;
+        flex: 1;
+    }
+    
+    .main {
+        color: #fff;
+        flex: 1;
+        margin: auto;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 70pt;
+        }
+        a {
+            /*font-size: 16pt;*/
+            @include normal-font;
+            color: #fff;
+        }
+    }
+    
+    
+    
+    .header2 {
+        background-color: #fff;
+        display: flex;
+    }
+        
+    .category {
+        flex: 4;
+        margin: auto;
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 80pt;
+            box-sizing: border-box;
+        }
+        a {
+            /*font-size: 16pt;*/
+            @include normal-font;
+            color: $black_color;
+        }
+    }
+    
+    .search {
+        flex: 1;
+        margin: 10pt 70pt;
+        font-family: Calibri;
+        width: 70pt;
+        height: 35pt;
+        border-style: solid;
+        padding-left: 15pt;
+        box-sizing: border-box;
+    }
+    
+    .column3Layout {
+        background-color: #EDEDEF;
+        display: flex;
+        padding: 20pt 60pt;
+        box-sizing: border-box;
+    }
+    
+    .maskImage {
+        flex: 2;
+        margin: auto;
+    }
+    
+    .title{
+        flex: 5;
+        margin: auto;
+        color: $black_color;
+        /*
+        font: {
+            size: 58pt;
+            weight: normal;
+        }
+       */
+       font: {
+           size: 58pt;
+           weight: normal;
+       }
+        padding-left: 35pt;
+        box-sizing: border-box;
+    }
+    
+    .information {
+        flex: 5;
+        margin: auto;
+        font-size: 18pt;
+        color: $black_color;
+    }
+    
+    .insideContainer {
+        padding: 0pt 75pt;
+        box-sizing: border-box;
+    }
+    
+    .headings {
+        color: $black_color;
+        font: {
+            size: 30pt;
+            weight: normal;
+        }
+        p{
+            margin: 10pt 0pt;
+        }
+    }
+    
+    .firstL {
+        font: {
+            size: 45pt;
+            weight: 450;
+        }
+    }
+    
+    .figure-Layout {
+        display: flex;
+        justify-content: space-between;
+
+        figure {
+            flex: 1;
+            margin: 10pt 15pt;
+        }
+        img {
+            width: 110pt;
+            height: 115pt;
+        }
+        figcaption {
+            font-size: 12pt;
+            text-align: center;
+            margin: 5pt 5pt;
+        }
+    }
+    
+    .fig-cat-Layout {
+        display: flex;
+        justify-content: space-between;
+
+        figure {
+            flex: 1;
+            background-color: #dbf3fa;
+            padding: 3.5pt;
+            /*
+            margin: auto;
+            margin-bottom: 30pt;
+            */
+            margin: auto, {
+                bottom: 30pt;
+            };
+        }
+        img {
+            width: 140pt;
+            height: 150pt;
+        }
+        figcaption {
+            font-size: 20pt;
+            color: $black_color;
+            text-align: center;
+        }
+    }
+    
+    .brand {
+        color: $black_color;
+        font-size: 14pt;
+        line-height: 2;
+        margin-bottom: 30pt;
+    }
+    
+    .footer {
+        background-color: #131a22;
+        display: flex;
+        justify-content: space-between;
+        padding: 10pt 200pt 150pt 75pt;
+        box-sizing: border-box;
+    }
+    /*
+    .column {
+        color: #fff;
+        font-size: 16pt;
+        line-height: .8;
+
+        &-header {
+            font-size: 38pt;
+        }
+    }
+    */
+    .column {
+        color: #fff;
+        /*
+        font-size: 16pt;
+        */
+        @include normal-font;
+        line-height: .8;
+
+        &-header {
+            font-size: 18pt;
+        }
+    }
+    /*
+    .column-header {
+        font-size: 18pt;
+    }
+    */ 

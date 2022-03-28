@@ -1,0 +1,21 @@
+.x{
+    font-size: 16px;
+    color: red;
+} 
+.y{
+    @extend .x;
+    margin: 10px;
+    padding: 5px;
+}
+// =======================
+/*
+.x, .y{
+    font-size: 16px;
+    color: red;
+}
+
+.y, .z{
+    margin: 10px;
+    padding: 5px;
+}
+*/ 
